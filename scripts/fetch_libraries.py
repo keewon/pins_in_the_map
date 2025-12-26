@@ -29,8 +29,8 @@ def filter_library(doc):
     if "도서관" not in category:
         return False
     
-    # 제외 키워드 (학교도서관, 대학도서관 등)
-    exclude = ["학교도서관", "대학도서관", "어린이집", "유치원", "사립"]
+    # 제외 키워드 (학교도서관, 대학도서관, 작은도서관 등)
+    exclude = ["학교도서관", "대학도서관", "어린이집", "유치원", "사립", "작은도서관"]
     for ex in exclude:
         if ex in name:
             return False

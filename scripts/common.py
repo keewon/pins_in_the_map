@@ -256,7 +256,7 @@ def save_raw_data(places: list, filename: str):
 
 def fetch_all(name: str, keywords: list, list_id: int, filter_func=None, regions=None):
     """
-    전국 장소 데이터 수집 메인 함수
+    장소 데이터 수집 메인 함수
     
     Args:
         name: 수집 대상 이름 (출력용)

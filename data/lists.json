@@ -2,32 +2,32 @@
   "lists": [
     {
       "id": 1,
-      "title": "전국 중학교",
-      "description": "전국 주요 중학교 위치",
+      "title": "중학교",
+      "description": "주요 중학교 위치",
       "color": "#4a9d8e"
     },
     {
       "id": 2,
-      "title": "전국 맥도날드",
-      "description": "전국 맥도날드 매장 위치",
+      "title": "맥도날드",
+      "description": "맥도날드 매장 위치",
       "color": "#d4a853"
     },
     {
       "id": 3,
-      "title": "전국 써브웨이",
-      "description": "전국 써브웨이 매장 위치",
+      "title": "써브웨이",
+      "description": "써브웨이 매장 위치",
       "color": "#4caf50"
     },
     {
       "id": 4,
-      "title": "전국 공공도서관",
-      "description": "전국 공공도서관 위치",
+      "title": "도서관",
+      "description": "도서관 위치",
       "color": "#5c6bc0"
     },
     {
       "id": 5,
-      "title": "전국 공공수영장",
-      "description": "전국 공공수영장 위치",
+      "title": "수영장",
+      "description": "수영장 위치",
       "color": "#e07a5f"
     }
   ]
