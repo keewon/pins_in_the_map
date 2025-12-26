@@ -1013,8 +1013,7 @@ function createMarker(pin, color, listTitle, listId) {
     marker.bindPopup(popupContent, {
         maxWidth: 280,
         closeButton: true,
-        autoPan: true,
-        autoPanPadding: [50, 50], // 팝업이 화면 가장자리에 가까울 때 부드럽게 이동
+        autoPan: false, // 가장자리 핀 클릭 시 에러 방지
     });
 
     return marker;
