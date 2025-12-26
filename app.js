@@ -287,6 +287,7 @@ function initMap() {
         center: initialCenter,
         zoom: initialZoom,
         zoomControl: true,
+        closePopupOnClick: false, // 지도 클릭 시 팝업 자동 닫힘 방지
     });
 
     // Add tile layer based on current theme
@@ -1012,6 +1013,8 @@ function createMarker(pin, color, listTitle, listId) {
     marker.bindPopup(popupContent, {
         maxWidth: 280,
         closeButton: true,
+        autoPan: true,
+        autoPanPadding: [50, 50], // 팝업이 화면 가장자리에 가까울 때 부드럽게 이동
     });
 
     return marker;
