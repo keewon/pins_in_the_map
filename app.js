@@ -15,12 +15,29 @@ const COLORS = [
     { name: 'blue', value: '#3b82f6' },
 ];
 
+// Icon options for specific lists
+const LIST_ICONS = {
+    1: [ // 중학교
+        { name: 'color', value: 'color', label: '색상' },
+        { name: 'emoji', value: '🏫', label: '🏫' },
+        { name: 'korean', value: '중', label: '중' },
+        { name: 'hanja', value: '中', label: '中' },
+    ],
+    9: [ // 고등학교
+        { name: 'color', value: 'color', label: '색상' },
+        { name: 'emoji', value: '🏫', label: '🏫' },
+        { name: 'korean', value: '고', label: '고' },
+        { name: 'hanja', value: '高', label: '高' },
+    ],
+};
+
 // 서울시청 좌표 (기본 위치)
 const SEOUL_CITY_HALL = { lat: 37.5666, lng: 126.9784 };
 
 // Cookie names for storing state
 const COOKIE_VISIBILITY = 'pins_visibility';
 const COOKIE_COLORS = 'pins_colors';
+const COOKIE_ICONS = 'pins_icons';
 const COOKIE_FIRST_VISIT = 'pins_first_visit';
 const COOKIE_MAP_VIEW = 'pins_map_view';
 const COOKIE_EXPIRY_DAYS = 365;
@@ -66,6 +83,14 @@ function loadColorsFromCookie() {
     return getCookie(COOKIE_COLORS) || {};
 }
 
+function saveIconsToCookie() {
+    setCookie(COOKIE_ICONS, state.listIcons, COOKIE_EXPIRY_DAYS);
+}
+
+function loadIconsFromCookie() {
+    return getCookie(COOKIE_ICONS) || {};
+}
+
 function setFirstVisitCookie() {
     setCookie(COOKIE_FIRST_VISIT, false, COOKIE_EXPIRY_DAYS);
 }
@@ -85,7 +110,7 @@ function loadMapViewFromCookie() {
 }
 
 function clearAllCookies() {
-    const cookies = [COOKIE_VISIBILITY, COOKIE_COLORS, COOKIE_FIRST_VISIT, COOKIE_MAP_VIEW];
+    const cookies = [COOKIE_VISIBILITY, COOKIE_COLORS, COOKIE_ICONS, COOKIE_FIRST_VISIT, COOKIE_MAP_VIEW];
     cookies.forEach(name => {
         document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
     });
@@ -108,6 +133,7 @@ const state = {
     markers: {}, // Grouped by list id
     clusterGroups: {}, // Cluster groups per list id
     listColors: {}, // Store selected colors per list
+    listIcons: {}, // Store selected icons per list (for schools)
     listVisibility: {}, // Store visibility state per list
     subwayLines: null, // GeoJSON data for subway lines
     subwayLinesLayer: null, // Leaflet layer for subway lines
@@ -253,6 +279,7 @@ async function loadPinData() {
         // Load saved state from cookies
         const savedVisibility = loadVisibilityFromCookie();
         const savedColors = loadColorsFromCookie();
+        const savedIcons = loadIconsFromCookie();
 
         // Load pins for each list from individual files
         const listPromises = listsData.lists.map(async (listMeta) => {
@@ -276,12 +303,18 @@ async function loadPinData() {
 
         state.pinLists = await Promise.all(listPromises);
 
-        // Initialize colors and visibility for each list
+        // Initialize colors, icons, and visibility for each list
         state.pinLists.forEach((list, index) => {
             // Use saved color if exists, otherwise use default from data or fallback
             state.listColors[list.id] = savedColors.hasOwnProperty(list.id)
                 ? savedColors[list.id]
                 : (list.color || COLORS[index % COLORS.length].value);
+            // Use saved icon if exists, otherwise default to 'color'
+            if (LIST_ICONS[list.id]) {
+                state.listIcons[list.id] = savedIcons.hasOwnProperty(list.id)
+                    ? savedIcons[list.id]
+                    : 'color';
+            }
             // Use saved visibility if exists, otherwise default to only libraries (id 4)
             state.listVisibility[list.id] = savedVisibility.hasOwnProperty(list.id) 
                 ? savedVisibility[list.id] 
@@ -362,6 +395,9 @@ function renderPinLists() {
         listElement.style.setProperty('--list-color', color);
         listElement.dataset.listId = list.id;
 
+        const iconOptions = LIST_ICONS[list.id];
+        const currentIcon = state.listIcons[list.id] || 'color';
+
         listElement.innerHTML = `
             <div class="list-header">
                 <label class="checkbox-wrapper">
@@ -380,8 +416,23 @@ function renderPinLists() {
                     <div class="list-description">${list.description}</div>
                 </div>
             </div>
+            ${iconOptions ? `
+            <div class="icon-picker-wrapper">
+                <span class="picker-label">아이콘:</span>
+                <div class="icon-options">
+                    ${iconOptions.map(ic => `
+                        <button 
+                            class="icon-option ${ic.value === currentIcon ? 'selected' : ''}" 
+                            data-icon="${ic.value}"
+                            data-list-id="${list.id}"
+                            aria-label="${ic.name}"
+                        >${ic.label}</button>
+                    `).join('')}
+                </div>
+            </div>
+            ` : ''}
             <div class="color-picker-wrapper">
-                <span class="color-picker-label">색상:</span>
+                <span class="picker-label">색상:</span>
                 <div class="color-options">
                     ${COLORS.map(c => `
                         <button 
@@ -403,6 +454,16 @@ function renderPinLists() {
             toggleListVisibility(list.id);
         });
 
+        // Event: Icon selection
+        const iconOptionsElems = listElement.querySelectorAll('.icon-option');
+        iconOptionsElems.forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const newIcon = option.dataset.icon;
+                changeListIcon(list.id, newIcon);
+            });
+        });
+
         // Event: Color selection
         const colorOptions = listElement.querySelectorAll('.color-option');
         colorOptions.forEach(option => {
@@ -415,7 +476,7 @@ function renderPinLists() {
 
         // Event: Click on list item (toggle visibility)
         listElement.addEventListener('click', (e) => {
-            if (e.target.closest('.checkbox-wrapper') || e.target.closest('.color-option')) return;
+            if (e.target.closest('.checkbox-wrapper') || e.target.closest('.color-option') || e.target.closest('.icon-option')) return;
             checkbox.checked = !checkbox.checked;
             toggleListVisibility(list.id);
         });
@@ -491,6 +552,31 @@ function changeListColor(listId, newColor) {
         const colorOptions = listElement.querySelectorAll('.color-option');
         colorOptions.forEach(option => {
             option.classList.toggle('selected', option.dataset.color === newColor);
+        });
+    }
+
+    // Update markers if visible
+    if (state.listVisibility[listId]) {
+        hideMarkers(listId);
+        showMarkers(listId);
+    }
+}
+
+/**
+ * Change icon of a pin list
+ */
+function changeListIcon(listId, newIcon) {
+    state.listIcons[listId] = newIcon;
+
+    // Save to cookie
+    saveIconsToCookie();
+
+    // Update selected icon indicator
+    const listElement = document.querySelector(`.pin-list-item[data-list-id="${listId}"]`);
+    if (listElement) {
+        const iconOptions = listElement.querySelectorAll('.icon-option');
+        iconOptions.forEach(option => {
+            option.classList.toggle('selected', option.dataset.icon === newIcon);
         });
     }
 
@@ -721,14 +807,36 @@ function createMarker(pin, color, listTitle, listId) {
             popupAnchor: [0, -8],
         });
     } else if (listId === 1 || listId === 9) {
-        // 중학교, 고등학교는 학교 이모지로 표시
-        icon = L.divIcon({
-            className: 'school-marker-wrapper',
-            html: `<div class="school-marker">🏫</div>`,
-            iconSize: [28, 28],
-            iconAnchor: [14, 14],
-            popupAnchor: [0, -14],
-        });
+        // 중학교, 고등학교는 아이콘 옵션에 따라 표시
+        const selectedIcon = state.listIcons[listId] || 'color';
+        if (selectedIcon === 'color') {
+            // 기본 마커 (핀 모양)
+            icon = L.divIcon({
+                className: 'custom-marker-wrapper',
+                html: `<div class="custom-marker" style="background: ${color}"></div>`,
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+                popupAnchor: [0, -32],
+            });
+        } else if (selectedIcon === '🏫') {
+            // 이모지 마커
+            icon = L.divIcon({
+                className: 'school-marker-wrapper',
+                html: `<div class="school-marker">🏫</div>`,
+                iconSize: [28, 28],
+                iconAnchor: [14, 14],
+                popupAnchor: [0, -14],
+            });
+        } else {
+            // 텍스트 마커 (중, 中, 고, 高)
+            icon = L.divIcon({
+                className: 'text-marker-wrapper',
+                html: `<div class="text-marker" style="background: ${color}">${selectedIcon}</div>`,
+                iconSize: [28, 28],
+                iconAnchor: [14, 14],
+                popupAnchor: [0, -14],
+            });
+        }
     } else {
         // 기본 마커 (핀 모양)
         icon = L.divIcon({

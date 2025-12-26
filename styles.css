@@ -240,6 +240,7 @@ body {
 /* Collapsed state - only show title and checkbox when unchecked */
 .pin-list-item:not(.active) .list-description,
 .pin-list-item:not(.active) .pin-count,
+.pin-list-item:not(.active) .icon-picker-wrapper,
 .pin-list-item:not(.active) .color-picker-wrapper {
     display: none;
 }
@@ -346,6 +347,46 @@ body {
     text-overflow: ellipsis;
 }
 
+/* Icon Picker */
+.icon-picker-wrapper {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-options {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.icon-option {
+    min-width: 32px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 6px;
+    border: 2px solid var(--border-color);
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.icon-option:hover {
+    background: var(--bg-hover);
+    border-color: var(--text-secondary);
+}
+
+.icon-option.selected {
+    border-color: var(--accent-gold);
+    background: rgba(212, 168, 83, 0.2);
+}
+
 /* Color Picker */
 .color-picker-wrapper {
     margin-top: 12px;
@@ -356,7 +397,7 @@ body {
     gap: 8px;
 }
 
-.color-picker-label {
+.picker-label {
     font-size: 0.8rem;
     color: var(--text-muted);
 }
@@ -630,6 +671,30 @@ body {
 }
 
 .school-marker:hover {
+    transform: scale(1.2);
+}
+
+/* Text Marker - Korean/Hanja */
+.text-marker-wrapper {
+    background: transparent !important;
+}
+
+.text-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.9);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    transition: all var(--transition-fast);
+}
+
+.text-marker:hover {
     transform: scale(1.2);
 }
 
@@ -1164,6 +1229,7 @@ body {
         padding: 16px;
     }
 
+    .icon-picker-wrapper,
     .color-picker-wrapper {
         flex-direction: column;
         align-items: flex-start;
@@ -1188,6 +1254,7 @@ body {
 /* Focus styles */
 .pin-list-item:focus-visible,
 .checkbox-wrapper input:focus-visible + .checkmark,
+.icon-option:focus-visible,
 .color-option:focus-visible,
 .mobile-toggle:focus-visible {
     outline: 2px solid var(--accent-gold);
