@@ -35,6 +35,31 @@ const REGIONS = [
     "제주특별자치도",
 ];
 
+// 지역 이름 축약
+const REGION_SHORT_NAMES = {
+    "서울특별시": "서울",
+    "부산광역시": "부산",
+    "대구광역시": "대구",
+    "인천광역시": "인천",
+    "광주광역시": "광주",
+    "대전광역시": "대전",
+    "울산광역시": "울산",
+    "세종특별자치시": "세종",
+    "경기도": "경기",
+    "강원특별자치도": "강원",
+    "충청북도": "충북",
+    "충청남도": "충남",
+    "전북특별자치도": "전북",
+    "전라남도": "전남",
+    "경상북도": "경북",
+    "경상남도": "경남",
+    "제주특별자치도": "제주",
+};
+
+function shortenRegionName(region) {
+    return REGION_SHORT_NAMES[region] || region;
+}
+
 // 광역단체별 중심 좌표 (위치 기반 선택용)
 const REGION_CENTERS = {
     "서울특별시": { lat: 37.5665, lng: 126.978 },
@@ -404,7 +429,7 @@ function renderRegionChips() {
         const chip = document.createElement('button');
         chip.className = `region-chip ${isActive ? 'active' : ''}`;
         chip.innerHTML = `
-            ${region.replace(/특별시|광역시|특별자치시|특별자치도|도$/, '')}
+            ${shortenRegionName(region)}
             <span class="region-count">(${count})</span>
         `;
         chip.addEventListener('click', () => toggleRegion(region));
