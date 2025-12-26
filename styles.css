@@ -444,6 +444,17 @@ body {
     color: var(--text-primary);
 }
 
+.popup-title-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.popup-title-link:hover {
+    color: var(--accent-gold);
+    text-decoration: underline;
+}
+
 .popup-description {
     font-size: 0.9rem;
     color: var(--text-secondary);

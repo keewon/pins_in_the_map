@@ -826,18 +826,15 @@ function createMarker(pin, color, listTitle) {
 
     const marker = L.marker([pin.latitude, pin.longitude], { icon });
 
-    // Add popup with optional Kakao Map link
-    const kakaoMapLink = pin.url 
-        ? `<a href="${pin.url}" target="_blank" rel="noopener noreferrer" class="popup-kakao-link">
-             <span class="kakao-icon">🗺️</span> 카카오맵에서 보기
-           </a>`
-        : '';
+    // Title with optional Kakao Map link
+    const titleContent = pin.url 
+        ? `<a href="${pin.url}" target="_blank" rel="noopener noreferrer" class="popup-title-link">${pin.title}</a>`
+        : `<span>${pin.title}</span>`;
 
     const popupContent = `
         <div class="popup-content">
-            <div class="popup-title">${pin.title}</div>
+            <div class="popup-title">${titleContent}</div>
             <div class="popup-description">${pin.description}</div>
-            ${kakaoMapLink}
             <div class="popup-list-badge" style="background: ${color}">${listTitle}</div>
         </div>
     `;
