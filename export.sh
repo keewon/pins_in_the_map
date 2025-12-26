@@ -18,6 +18,7 @@ echo "📄 파일 복사 중..."
 cp index.html "$OUTPUT_DIR/"
 cp app.js "$OUTPUT_DIR/"
 cp styles.css "$OUTPUT_DIR/"
+cp favicon.svg "$OUTPUT_DIR/"
 
 # data 폴더에서 필요한 JSON만 복사 (lists.json + 숫자.json + lines.json)
 cp data/lists.json "$OUTPUT_DIR/data/"
