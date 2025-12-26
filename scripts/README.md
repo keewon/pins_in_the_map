@@ -9,7 +9,7 @@
 #### 카카오 REST API 키
 1. [카카오 개발자 사이트](https://developers.kakao.com) 방문
 2. 로그인 후 "내 애플리케이션" → "애플리케이션 추가하기"
-3. 앱 이름 입력 (예: "pins_in_the_map")
+3. 앱 이름 입력 (예: "pins_on_the_map")
 4. 생성된 앱 → "앱 키" 탭에서 **REST API 키** 복사
 
 #### 나이스 교육정보 API 키 (학교 정보용)

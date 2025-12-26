@@ -1,5 +1,5 @@
 /**
- * Pins in the Map - Application Logic
+ * Pins on the Map - Application Logic
  */
 
 // Available colors for pin lists

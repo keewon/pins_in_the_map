@@ -1,4 +1,4 @@
-# Pins in the map
+# Pins on the map
 
 이 서비스는 요약하자면 지도에 핀을 꽂는 서비스로 데스크탑 및 모바일을 지원한다.
 Multiple pins can be included in each pin list.
