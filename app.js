@@ -1010,47 +1010,36 @@ function createMarker(pin, color, listTitle, listId) {
         </div>
     `;
 
-    // 팝업 생성 (동적 위치 조정)
-    const popup = L.popup({
+    marker.bindPopup(popupContent, {
         maxWidth: 280,
         closeButton: true,
         autoPan: false,
-        className: '', // 동적으로 설정됨
-    }).setContent(popupContent);
+    });
     
-    marker.bindPopup(popup);
-    
-    // 마커 클릭 시 팝업 위치 동적 조정
-    marker.on('click', function(e) {
+    // 팝업 열릴 때 위치 동적 조정
+    marker.on('popupopen', function(e) {
         const map = state.map;
-        const containerPoint = map.latLngToContainerPoint(e.latlng);
+        const popup = e.popup;
+        const latlng = marker.getLatLng();
+        const containerPoint = map.latLngToContainerPoint(latlng);
         const mapSize = map.getSize();
         
-        // 화면 상단 30% 이내면 팝업을 아래로
-        const isNearTop = containerPoint.y < mapSize.y * 0.3;
-        // 화면 좌측 20% 이내면 팝업을 오른쪽으로
-        const isNearLeft = containerPoint.x < mapSize.x * 0.2;
-        // 화면 우측 20% 이내면 팝업을 왼쪽으로
-        const isNearRight = containerPoint.x > mapSize.x * 0.8;
-        
-        // 팝업 오프셋 조정
-        let offsetX = 0;
-        let offsetY = -10; // 기본값 (위쪽)
+        // 화면 상단 35% 이내면 팝업을 아래로
+        const isNearTop = containerPoint.y < mapSize.y * 0.35;
         
         if (isNearTop) {
-            offsetY = 25; // 아래쪽으로
-            popup.options.className = 'popup-bottom';
-        } else {
-            popup.options.className = '';
+            // 팝업 DOM에 클래스 추가하고 위치 조정
+            const popupEl = popup.getElement();
+            if (popupEl) {
+                popupEl.classList.add('popup-bottom');
+                // 팝업을 아래로 이동 (마커 아래로)
+                const currentPos = popup.getLatLng();
+                const point = map.latLngToLayerPoint(currentPos);
+                point.y += 60; // 아래로 이동
+                const newLatLng = map.layerPointToLatLng(point);
+                popup.setLatLng(newLatLng);
+            }
         }
-        
-        if (isNearLeft) {
-            offsetX = 100;
-        } else if (isNearRight) {
-            offsetX = -100;
-        }
-        
-        popup.options.offset = [offsetX, offsetY];
     });
 
     return marker;
