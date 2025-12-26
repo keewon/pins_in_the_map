@@ -14,9 +14,53 @@ const COLORS = [
     { name: 'amber', value: '#ffa726' },
 ];
 
+// 광역단체 목록
+const REGIONS = [
+    "서울특별시",
+    "부산광역시",
+    "대구광역시",
+    "인천광역시",
+    "광주광역시",
+    "대전광역시",
+    "울산광역시",
+    "세종특별자치시",
+    "경기도",
+    "강원특별자치도",
+    "충청북도",
+    "충청남도",
+    "전북특별자치도",
+    "전라남도",
+    "경상북도",
+    "경상남도",
+    "제주특별자치도",
+];
+
+// 광역단체별 중심 좌표 (위치 기반 선택용)
+const REGION_CENTERS = {
+    "서울특별시": { lat: 37.5665, lng: 126.978 },
+    "부산광역시": { lat: 35.1796, lng: 129.0756 },
+    "대구광역시": { lat: 35.8714, lng: 128.6014 },
+    "인천광역시": { lat: 37.4563, lng: 126.7052 },
+    "광주광역시": { lat: 35.1595, lng: 126.8526 },
+    "대전광역시": { lat: 36.3504, lng: 127.3845 },
+    "울산광역시": { lat: 35.5384, lng: 129.3114 },
+    "세종특별자치시": { lat: 36.4800, lng: 127.2890 },
+    "경기도": { lat: 37.4138, lng: 127.5183 },
+    "강원특별자치도": { lat: 37.8228, lng: 128.1555 },
+    "충청북도": { lat: 36.6357, lng: 127.4917 },
+    "충청남도": { lat: 36.5184, lng: 126.8000 },
+    "전북특별자치도": { lat: 35.8203, lng: 127.1089 },
+    "전라남도": { lat: 34.8679, lng: 126.9910 },
+    "경상북도": { lat: 36.4919, lng: 128.8889 },
+    "경상남도": { lat: 35.4606, lng: 128.2132 },
+    "제주특별자치도": { lat: 33.4890, lng: 126.4983 },
+};
+
 // Cookie names for storing state
 const COOKIE_VISIBILITY = 'pins_visibility';
 const COOKIE_COLORS = 'pins_colors';
+const COOKIE_REGIONS = 'pins_regions';
+const COOKIE_FIRST_VISIT = 'pins_first_visit';
 const COOKIE_EXPIRY_DAYS = 365;
 
 /**
@@ -60,6 +104,22 @@ function loadColorsFromCookie() {
     return getCookie(COOKIE_COLORS) || {};
 }
 
+function saveRegionsToCookie() {
+    setCookie(COOKIE_REGIONS, state.selectedRegions, COOKIE_EXPIRY_DAYS);
+}
+
+function loadRegionsFromCookie() {
+    return getCookie(COOKIE_REGIONS) || null;
+}
+
+function setFirstVisitCookie() {
+    setCookie(COOKIE_FIRST_VISIT, false, COOKIE_EXPIRY_DAYS);
+}
+
+function isFirstVisit() {
+    return getCookie(COOKIE_FIRST_VISIT) === null;
+}
+
 // Application State
 const state = {
     map: null,
@@ -67,6 +127,9 @@ const state = {
     markers: {}, // Grouped by list id
     listColors: {}, // Store selected colors per list
     listVisibility: {}, // Store visibility state per list
+    selectedRegions: [], // Store selected regions
+    regionCounts: {}, // Pin counts per region
+    regionFilterCollapsed: false,
 };
 
 // DOM Elements
@@ -76,6 +139,9 @@ const elements = {
     overlay: null,
     listContainer: null,
     map: null,
+    regionModal: null,
+    regionChips: null,
+    regionToggleBtn: null,
 };
 
 /**
@@ -88,6 +154,9 @@ async function init() {
     elements.overlay = document.getElementById('overlay');
     elements.listContainer = document.getElementById('listContainer');
     elements.map = document.getElementById('map');
+    elements.regionModal = document.getElementById('regionModal');
+    elements.regionChips = document.getElementById('regionChips');
+    elements.regionToggleBtn = document.getElementById('regionToggleBtn');
 
     // Setup event listeners
     setupEventListeners();
@@ -97,6 +166,106 @@ async function init() {
 
     // Load pin data
     await loadPinData();
+
+    // Check if first visit and show modal
+    if (isFirstVisit()) {
+        showRegionModal();
+    }
+}
+
+/**
+ * Show region selection modal
+ */
+function showRegionModal() {
+    elements.regionModal.classList.add('active');
+}
+
+/**
+ * Hide region selection modal
+ */
+function hideRegionModal() {
+    elements.regionModal.classList.remove('active');
+    setFirstVisitCookie();
+}
+
+/**
+ * Handle location-based region selection
+ */
+function selectRegionByLocation() {
+    hideRegionModal();
+    
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const userLat = position.coords.latitude;
+                const userLng = position.coords.longitude;
+                const closestRegion = findClosestRegion(userLat, userLng);
+                
+                state.selectedRegions = [closestRegion];
+                saveRegionsToCookie();
+                renderRegionChips();
+                refreshAllMarkers();
+                
+                // Center map on the region
+                const center = REGION_CENTERS[closestRegion];
+                state.map.setView([center.lat, center.lng], 10);
+            },
+            (error) => {
+                console.warn('위치 정보를 가져올 수 없습니다:', error);
+                // Fallback to Seoul
+                selectSeoulOnly();
+            }
+        );
+    } else {
+        // Fallback to Seoul
+        selectSeoulOnly();
+    }
+}
+
+/**
+ * Select Seoul only
+ */
+function selectSeoulOnly() {
+    hideRegionModal();
+    state.selectedRegions = ['서울특별시'];
+    saveRegionsToCookie();
+    renderRegionChips();
+    refreshAllMarkers();
+    
+    // Center map on Seoul
+    state.map.setView([37.5665, 126.978], 11);
+}
+
+/**
+ * Select all regions
+ */
+function selectAllRegions() {
+    hideRegionModal();
+    state.selectedRegions = [...REGIONS];
+    saveRegionsToCookie();
+    renderRegionChips();
+    refreshAllMarkers();
+}
+
+/**
+ * Find closest region to user location
+ */
+function findClosestRegion(userLat, userLng) {
+    let closestRegion = REGIONS[0];
+    let minDistance = Infinity;
+
+    for (const region of REGIONS) {
+        const center = REGION_CENTERS[region];
+        const distance = Math.sqrt(
+            Math.pow(userLat - center.lat, 2) + Math.pow(userLng - center.lng, 2)
+        );
+        if (distance < minDistance) {
+            minDistance = distance;
+            closestRegion = region;
+        }
+    }
+
+    return closestRegion;
 }
 
 /**
@@ -137,6 +306,7 @@ async function loadPinData() {
         // Load saved state from cookies
         const savedVisibility = loadVisibilityFromCookie();
         const savedColors = loadColorsFromCookie();
+        const savedRegions = loadRegionsFromCookie();
 
         // Load pins for each list from individual files
         const listPromises = listsData.lists.map(async (listMeta) => {
@@ -160,6 +330,18 @@ async function loadPinData() {
 
         state.pinLists = await Promise.all(listPromises);
 
+        // Calculate region counts
+        calculateRegionCounts();
+
+        // Initialize regions (from cookie or default to Seoul)
+        if (savedRegions) {
+            state.selectedRegions = savedRegions;
+        } else if (!isFirstVisit()) {
+            // Not first visit but no saved regions - default to all
+            state.selectedRegions = [...REGIONS];
+        }
+        // If first visit, modal will handle region selection
+
         // Initialize colors and visibility for each list
         state.pinLists.forEach((list, index) => {
             // Use saved color if exists, otherwise use default from data or fallback
@@ -172,13 +354,137 @@ async function loadPinData() {
                 : true;
         });
 
+        renderRegionChips();
         renderPinLists();
-        renderAllMarkers();
+        
+        // Only render markers if regions are selected (not first visit waiting for modal)
+        if (state.selectedRegions.length > 0) {
+            renderAllMarkers();
+        }
 
     } catch (error) {
         console.error('Error loading pin data:', error);
         showError('데이터를 불러오는데 실패했습니다.');
     }
+}
+
+/**
+ * Calculate pin counts per region
+ */
+function calculateRegionCounts() {
+    state.regionCounts = {};
+    
+    // Initialize all regions with 0
+    REGIONS.forEach(region => {
+        state.regionCounts[region] = 0;
+    });
+
+    // Count pins per region across all lists
+    state.pinLists.forEach(list => {
+        list.pins.forEach(pin => {
+            const region = pin.region || '기타';
+            if (state.regionCounts.hasOwnProperty(region)) {
+                state.regionCounts[region]++;
+            }
+        });
+    });
+}
+
+/**
+ * Render region chips
+ */
+function renderRegionChips() {
+    const container = elements.regionChips;
+    container.innerHTML = '';
+
+    REGIONS.forEach(region => {
+        const count = state.regionCounts[region] || 0;
+        const isActive = state.selectedRegions.includes(region);
+        
+        const chip = document.createElement('button');
+        chip.className = `region-chip ${isActive ? 'active' : ''}`;
+        chip.innerHTML = `
+            ${region.replace(/특별시|광역시|특별자치시|특별자치도|도$/, '')}
+            <span class="region-count">(${count})</span>
+        `;
+        chip.addEventListener('click', () => toggleRegion(region));
+        
+        container.appendChild(chip);
+    });
+
+    // Add action buttons
+    const actionsDiv = document.createElement('div');
+    actionsDiv.className = 'region-actions';
+    actionsDiv.innerHTML = `
+        <button class="region-action-btn" id="selectAllRegions">전체 선택</button>
+        <button class="region-action-btn" id="clearAllRegions">전체 해제</button>
+    `;
+    container.appendChild(actionsDiv);
+
+    // Add event listeners
+    document.getElementById('selectAllRegions').addEventListener('click', () => {
+        state.selectedRegions = [...REGIONS];
+        saveRegionsToCookie();
+        renderRegionChips();
+        refreshAllMarkers();
+    });
+
+    document.getElementById('clearAllRegions').addEventListener('click', () => {
+        state.selectedRegions = [];
+        saveRegionsToCookie();
+        renderRegionChips();
+        refreshAllMarkers();
+    });
+}
+
+/**
+ * Toggle region selection
+ */
+function toggleRegion(region) {
+    const index = state.selectedRegions.indexOf(region);
+    if (index === -1) {
+        state.selectedRegions.push(region);
+    } else {
+        state.selectedRegions.splice(index, 1);
+    }
+    
+    saveRegionsToCookie();
+    renderRegionChips();
+    refreshAllMarkers();
+}
+
+/**
+ * Refresh all markers based on current region selection
+ */
+function refreshAllMarkers() {
+    // Remove all existing markers
+    Object.keys(state.markers).forEach(listId => {
+        hideMarkers(listId);
+    });
+    
+    // Re-render markers for visible lists
+    renderAllMarkers();
+    
+    // Update pin counts in list items
+    updatePinCounts();
+}
+
+/**
+ * Update pin counts displayed in list items
+ */
+function updatePinCounts() {
+    state.pinLists.forEach(list => {
+        const filteredCount = list.pins.filter(pin => 
+            state.selectedRegions.includes(pin.region || '기타')
+        ).length;
+        
+        const countElement = document.querySelector(
+            `.pin-list-item[data-list-id="${list.id}"] .pin-count`
+        );
+        if (countElement) {
+            countElement.textContent = filteredCount;
+        }
+    });
 }
 
 /**
@@ -191,6 +497,11 @@ function renderPinLists() {
     state.pinLists.forEach((list) => {
         const color = state.listColors[list.id];
         const isActive = state.listVisibility[list.id];
+        
+        // Count pins in selected regions
+        const filteredCount = list.pins.filter(pin => 
+            state.selectedRegions.includes(pin.region || '기타')
+        ).length;
         
         const listElement = document.createElement('div');
         listElement.className = `pin-list-item ${isActive ? 'active' : ''}`;
@@ -210,7 +521,7 @@ function renderPinLists() {
                 <div class="list-info">
                     <div class="list-title">
                         ${list.title}
-                        <span class="pin-count" style="background: ${color}">${list.pins.length}</span>
+                        <span class="pin-count" style="background: ${color}">${filteredCount}</span>
                     </div>
                     <div class="list-description">${list.description}</div>
                 </div>
@@ -329,7 +640,7 @@ function renderAllMarkers() {
 }
 
 /**
- * Show markers for a specific list
+ * Show markers for a specific list (filtered by selected regions)
  */
 function showMarkers(listId) {
     const list = state.pinLists.find(l => l.id === listId);
@@ -338,7 +649,12 @@ function showMarkers(listId) {
     const color = state.listColors[listId];
     state.markers[listId] = [];
 
-    list.pins.forEach(pin => {
+    // Filter pins by selected regions
+    const filteredPins = list.pins.filter(pin => 
+        state.selectedRegions.includes(pin.region || '기타')
+    );
+
+    filteredPins.forEach(pin => {
         const marker = createMarker(pin, color, list.title);
         marker.addTo(state.map);
         state.markers[listId].push(marker);
@@ -372,11 +688,18 @@ function createMarker(pin, color, listTitle) {
 
     const marker = L.marker([pin.latitude, pin.longitude], { icon });
 
-    // Add popup
+    // Add popup with optional Kakao Map link
+    const kakaoMapLink = pin.url 
+        ? `<a href="${pin.url}" target="_blank" rel="noopener noreferrer" class="popup-kakao-link">
+             <span class="kakao-icon">🗺️</span> 카카오맵에서 보기
+           </a>`
+        : '';
+
     const popupContent = `
         <div class="popup-content">
             <div class="popup-title">${pin.title}</div>
             <div class="popup-description">${pin.description}</div>
+            ${kakaoMapLink}
             <div class="popup-list-badge" style="background: ${color}">${listTitle}</div>
         </div>
     `;
@@ -403,11 +726,24 @@ function setupEventListeners() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeSidebar();
+            hideRegionModal();
         }
     });
 
     // Handle window resize
     window.addEventListener('resize', handleResize);
+
+    // Region modal buttons
+    document.getElementById('btnLocationBased').addEventListener('click', selectRegionByLocation);
+    document.getElementById('btnSeoulOnly').addEventListener('click', selectSeoulOnly);
+    document.getElementById('btnShowAll').addEventListener('click', selectAllRegions);
+
+    // Region filter toggle
+    elements.regionToggleBtn.addEventListener('click', () => {
+        state.regionFilterCollapsed = !state.regionFilterCollapsed;
+        elements.regionChips.classList.toggle('collapsed', state.regionFilterCollapsed);
+        elements.regionToggleBtn.textContent = state.regionFilterCollapsed ? '펼치기' : '접기';
+    });
 }
 
 /**
@@ -480,4 +816,3 @@ function showError(message) {
 
 // Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', init);
-

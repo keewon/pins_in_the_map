@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """공공수영장 위치 수집"""
 
-from common import fetch_all
+from common import fetch_all, DETAILED_REGIONS
 
-# 설정
 NAME = "공공수영장"
 LIST_ID = 5
 KEYWORDS = [
@@ -21,7 +20,6 @@ def filter_pool(doc):
     name = doc.get("place_name", "")
     category = doc.get("category_name", "")
     
-    # 수영 관련 키워드 포함
     if "수영" not in name and "수영" not in category:
         return False
     
@@ -30,14 +28,8 @@ def filter_pool(doc):
     for ex in exclude:
         if ex in name:
             return False
-    
     return True
 
 
 if __name__ == "__main__":
-    fetch_all(
-        name=NAME,
-        keywords=KEYWORDS,
-        list_id=LIST_ID,
-        filter_func=filter_pool,
-    )
+    fetch_all(NAME, KEYWORDS, LIST_ID, filter_pool, DETAILED_REGIONS)

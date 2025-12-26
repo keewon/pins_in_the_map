@@ -27,6 +27,17 @@
             <div class="sidebar-content">
                 <p class="sidebar-description">지도에서 다양한 장소를 확인하세요</p>
                 
+                <!-- Region Filter -->
+                <div class="region-filter" id="regionFilter">
+                    <div class="region-filter-header">
+                        <span class="region-filter-title">🗺️ 지역 필터</span>
+                        <button class="region-toggle-btn" id="regionToggleBtn">접기</button>
+                    </div>
+                    <div class="region-chips" id="regionChips">
+                        <!-- Region chips will be dynamically inserted here -->
+                    </div>
+                </div>
+                
                 <div class="list-container" id="listContainer">
                     <!-- Pin lists will be dynamically inserted here -->
                 </div>
@@ -49,6 +60,37 @@
 
         <!-- Overlay for mobile -->
         <div class="overlay" id="overlay"></div>
+
+        <!-- Region Selection Modal -->
+        <div class="modal-overlay" id="regionModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <span class="modal-icon">🗺️</span>
+                    <h2>지역 선택</h2>
+                </div>
+                <p class="modal-description">
+                    전국 데이터를 한 번에 로드하면 느릴 수 있어요.<br>
+                    원하는 방식을 선택해주세요.
+                </p>
+                <div class="modal-buttons">
+                    <button class="modal-btn modal-btn-primary" id="btnLocationBased">
+                        <span class="btn-icon">📍</span>
+                        <span class="btn-text">
+                            <strong>내 위치 기반</strong>
+                            <small>가장 가까운 지역 자동 선택</small>
+                        </span>
+                    </button>
+                    <button class="modal-btn modal-btn-secondary" id="btnSeoulOnly">
+                        <span class="btn-icon">🏙️</span>
+                        <span class="btn-text">
+                            <strong>서울만 보기</strong>
+                            <small>서울특별시만 활성화</small>
+                        </span>
+                    </button>
+                </div>
+                <button class="modal-skip" id="btnShowAll">전체 지역 보기 (느릴 수 있음)</button>
+            </div>
+        </div>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

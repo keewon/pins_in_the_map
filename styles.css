@@ -460,6 +460,32 @@ body {
     color: var(--bg-primary);
 }
 
+/* Kakao Map Link */
+.popup-kakao-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: #fee500;
+    color: #191919;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.popup-kakao-link:hover {
+    background: #fada0a;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(254, 229, 0, 0.4);
+}
+
+.popup-kakao-link .kakao-icon {
+    font-size: 1rem;
+}
+
 /* Custom Marker */
 .custom-marker {
     display: flex;
@@ -594,6 +620,269 @@ body {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+/* ==========================================
+   Region Selection Modal
+   ========================================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-medium);
+    backdrop-filter: blur(8px);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: linear-gradient(145deg, var(--bg-secondary), var(--bg-tertiary));
+    border-radius: 20px;
+    padding: 36px;
+    max-width: 420px;
+    width: 90%;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+    transform: translateY(20px) scale(0.95);
+    transition: transform var(--transition-slow);
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0) scale(1);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.modal-icon {
+    font-size: 2rem;
+}
+
+.modal-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.modal-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-align: left;
+}
+
+.modal-btn-primary {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-copper));
+    color: var(--bg-primary);
+}
+
+.modal-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 168, 83, 0.4);
+}
+
+.modal-btn-secondary {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.modal-btn-secondary:hover {
+    background: var(--bg-hover);
+    border-color: var(--accent-teal);
+    transform: translateY(-2px);
+}
+
+.modal-btn .btn-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.modal-btn .btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.modal-btn .btn-text strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.modal-btn .btn-text small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.modal-skip {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.modal-skip:hover {
+    color: var(--text-secondary);
+}
+
+/* ==========================================
+   Region Filter
+   ========================================== */
+
+.region-filter {
+    background: var(--bg-tertiary);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.region-filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.region-filter-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.region-toggle-btn {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    background: var(--bg-hover);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.region-toggle-btn:hover {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.region-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    transition: max-height var(--transition-medium);
+}
+
+.region-chips.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.region-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    user-select: none;
+}
+
+.region-chip:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.region-chip.active {
+    background: var(--accent-teal);
+    border-color: var(--accent-teal);
+    color: var(--bg-primary);
+}
+
+.region-chip .region-count {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.region-chip.active .region-count {
+    opacity: 1;
+}
+
+.region-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.region-action-btn {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.region-action-btn:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
 }
 
 /* ==========================================
