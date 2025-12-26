@@ -720,8 +720,8 @@ function createMarker(pin, color, listTitle, listId) {
             iconAnchor: [8, 8],
             popupAnchor: [0, -8],
         });
-    } else if (listId === 1) {
-        // 중학교는 학교 이모지로 표시
+    } else if (listId === 1 || listId === 9) {
+        // 중학교, 고등학교는 학교 이모지로 표시
         icon = L.divIcon({
             className: 'school-marker-wrapper',
             html: `<div class="school-marker">🏫</div>`,
