@@ -7,6 +7,18 @@
       "color": "#3b82f6"
     },
     {
+      "id": 7,
+      "title": "고속철도역",
+      "description": "KTX/SRT 정차역",
+      "color": "#c47d4e"
+    },
+    {
+      "id": 8,
+      "title": "일반기차역",
+      "description": "무궁화/새마을/ITX 정차역",
+      "color": "#5c6bc0"
+    },
+    {
       "id": 1,
       "title": "중학교",
       "description": "주요 중학교 위치",
@@ -17,18 +29,6 @@
       "title": "고등학교",
       "description": "주요 고등학교 위치",
       "color": "#8b5cf6"
-    },
-    {
-      "id": 2,
-      "title": "맥도날드",
-      "description": "맥도날드 매장 위치",
-      "color": "#d4a853"
-    },
-    {
-      "id": 3,
-      "title": "써브웨이",
-      "description": "써브웨이 매장 위치",
-      "color": "#4caf50"
     },
     {
       "id": 4,
@@ -43,16 +43,16 @@
       "color": "#e07a5f"
     },
     {
-      "id": 7,
-      "title": "고속철도역",
-      "description": "KTX/SRT 정차역",
-      "color": "#c47d4e"
+      "id": 2,
+      "title": "맥도날드",
+      "description": "맥도날드 매장 위치",
+      "color": "#d4a853"
     },
     {
-      "id": 8,
-      "title": "일반기차역",
-      "description": "무궁화/새마을/ITX 정차역",
-      "color": "#5c6bc0"
+      "id": 3,
+      "title": "써브웨이",
+      "description": "써브웨이 매장 위치",
+      "color": "#4caf50"
     },
     {
       "id": 10,

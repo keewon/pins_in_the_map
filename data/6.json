@@ -5,7 +5,7 @@
       "lat": 37.46505238644672,
       "lng": 126.67996793218974,
       "address": "인천 미추홀구 주안로 95-19",
-      "description": "1호선, 2호선, 인천2호선",
+      "description": "1호선, 인천2호선",
       "url": "http://place.map.kakao.com/21160576",
       "region": "인천"
     },
@@ -131,9 +131,27 @@
       "lat": 37.56534539636417,
       "lng": 126.97719821079865,
       "address": "서울 중구 세종대로 지하 101",
-      "description": "1호선, 대전1호선, 부산1호선",
+      "description": "1호선",
       "url": "http://place.map.kakao.com/21160570",
       "region": "서울"
+    },
+    {
+      "title": "시청역",
+      "lat": 35.1796794732693,
+      "lng": 129.076559083164,
+      "address": "부산 연제구 중앙대로 지하 1017",
+      "description": "부산1호선",
+      "url": "http://place.map.kakao.com/21160457",
+      "region": "부산"
+    },
+    {
+      "title": "시청역",
+      "lat": 36.3515240038326,
+      "lng": 127.386751407456,
+      "address": "대전 서구 둔산중로 지하 55",
+      "description": "대전1호선",
+      "url": "http://place.map.kakao.com/21161032",
+      "region": "대전"
     },
     {
       "title": "구로역",
@@ -275,7 +293,7 @@
       "lat": 37.55597933890212,
       "lng": 126.97209238331357,
       "address": "서울 중구 세종대로 지하 2",
-      "description": "1호선, 4호선, GTX-A, 경의중앙선, 공항철도",
+      "description": "1호선, 4호선, 경의중앙선, 공항철도, GTX-A",
       "url": "http://place.map.kakao.com/27254967",
       "region": "서울"
     },
@@ -302,9 +320,18 @@
       "lat": 37.486681622773176,
       "lng": 126.76453398304898,
       "address": "경기 부천시 소사구 중동로 73",
-      "description": "1호선, 2호선, 부산2호선",
+      "description": "1호선",
       "url": "http://place.map.kakao.com/21160520",
       "region": "경기"
+    },
+    {
+      "title": "중동역",
+      "lat": 35.1666833502971,
+      "lng": 129.16876188899343,
+      "address": "부산 해운대구 해운대로 지하 730",
+      "description": "부산2호선",
+      "url": "http://place.map.kakao.com/21161000",
+      "region": "부산"
     },
     {
       "title": "신길역",
@@ -545,8 +572,17 @@
       "lat": 37.555198169366435,
       "lng": 126.93698075993808,
       "address": "서울 마포구 신촌로 지하 90",
-      "description": "2호선, 경의중앙선",
+      "description": "2호선",
       "url": "http://place.map.kakao.com/21160531",
+      "region": "서울"
+    },
+    {
+      "title": "신촌역",
+      "lat": 37.55967513765615,
+      "lng": 126.94208931819857,
+      "address": "서울 서대문구 신촌역로 30",
+      "description": "경의중앙선",
+      "url": "http://place.map.kakao.com/26352363",
       "region": "서울"
     },
     {
@@ -644,9 +680,27 @@
       "lat": 37.4938999991414,
       "lng": 127.014383829781,
       "address": "서울 서초구 서초대로 지하 294",
-      "description": "1호선, 2호선, 3호선, 대구1호선, 동해선, 부산1호선",
+      "description": "2호선, 3호선",
       "url": "http://place.map.kakao.com/21160582",
       "region": "서울"
+    },
+    {
+      "title": "교대역",
+      "lat": 35.19578446925463,
+      "lng": 129.07999678024,
+      "address": "부산 연제구 중앙대로 지하 1217",
+      "description": "부산1호선, 동해선",
+      "url": "http://place.map.kakao.com/21160875",
+      "region": "부산"
+    },
+    {
+      "title": "교대역",
+      "lat": 35.8506517193906,
+      "lng": 128.590580870154,
+      "address": "대구 남구 중앙대로 지하 194",
+      "description": "대구1호선",
+      "url": "http://place.map.kakao.com/21160478",
+      "region": "대구"
     },
     {
       "title": "영등포구청역",
@@ -770,9 +824,18 @@
       "lat": 37.5111446632705,
       "lng": 127.073849447402,
       "address": "서울 송파구 올림픽로 지하 23",
-      "description": "2호선, 3호선, 9호선, 부산3호선",
+      "description": "2호선, 9호선",
       "url": "http://place.map.kakao.com/21160812",
       "region": "서울"
+    },
+    {
+      "title": "종합운동장역",
+      "lat": 35.1915543631385,
+      "lng": 129.06742941297,
+      "address": "부산 연제구 거제동 1191-2",
+      "description": "부산3호선",
+      "url": "http://place.map.kakao.com/21160476",
+      "region": "부산"
     },
     {
       "title": "연신내역",
@@ -824,9 +887,18 @@
       "lat": 37.6346440058753,
       "lng": 126.832688422366,
       "address": "경기 고양시 덕양구 화정로 지하 60",
-      "description": "1호선, 3호선, 광주1호선",
+      "description": "3호선",
       "url": "http://place.map.kakao.com/21160632",
       "region": "경기"
+    },
+    {
+      "title": "화정역",
+      "lat": 35.1519654749892,
+      "lng": 126.876623011302,
+      "address": "광주 서구 상무대로 지하 1050",
+      "description": "광주1호선",
+      "url": "http://place.map.kakao.com/21160993",
+      "region": "광주"
     },
     {
       "title": "원당역",
@@ -887,9 +959,18 @@
       "lat": 37.63169736298744,
       "lng": 126.81093112718072,
       "address": "경기 고양시 덕양구 대주로107번길 71-81",
-      "description": "1호선, 3호선, GTX-A, 경의중앙선, 대구1호선, 서해선",
+      "description": "3호선, 경의중앙선, 서해선, GTX-A",
       "url": "http://place.map.kakao.com/21160817",
       "region": "경기"
+    },
+    {
+      "title": "대곡역",
+      "lat": 35.8095726496598,
+      "lng": 128.512766290689,
+      "address": "대구 달서구 비슬로 지하 2718",
+      "description": "대구1호선",
+      "url": "http://place.map.kakao.com/21161010",
+      "region": "대구"
     },
     {
       "title": "정발산역",
@@ -1256,9 +1337,18 @@
       "lat": 37.31599451967913,
       "lng": 126.83883035405907,
       "address": "경기 안산시 단원구 중앙대로 918",
-      "description": "1호선, 4호선, 부산1호선",
+      "description": "4호선",
       "url": "http://place.map.kakao.com/21160651",
       "region": "경기"
+    },
+    {
+      "title": "중앙역",
+      "lat": 35.10372501690833,
+      "lng": 129.036363969152,
+      "address": "부산 중구 중앙대로 지하 83",
+      "description": "부산1호선",
+      "url": "http://place.map.kakao.com/21160455",
+      "region": "부산"
     },
     {
       "title": "성신여대입구역",
@@ -1706,9 +1796,18 @@
       "lat": 37.5611612387718,
       "lng": 126.812430347154,
       "address": "서울 강서구 공항대로 지하 33",
-      "description": "5호선, 동해선",
+      "description": "5호선",
       "url": "http://place.map.kakao.com/21160748",
       "region": "서울"
+    },
+    {
+      "title": "송정역",
+      "lat": 35.1877667326912,
+      "lng": 129.20208562126,
+      "address": "부산 해운대구 해운대로 1147",
+      "description": "동해선",
+      "url": "http://place.map.kakao.com/1717881639",
+      "region": "부산"
     },
     {
       "title": "영등포시장역",
@@ -1733,9 +1832,18 @@
       "lat": 37.5255796429707,
       "lng": 126.886419282885,
       "address": "서울 영등포구 양산로 지하 21",
-      "description": "5호선, 경의중앙선",
+      "description": "5호선",
       "url": "http://place.map.kakao.com/21160684",
       "region": "서울"
+    },
+    {
+      "title": "양평역",
+      "lat": 37.4926843397043,
+      "lng": 127.492247611418,
+      "address": "경기 양평군 양평읍 역전길 30",
+      "description": "경의중앙선",
+      "url": "http://place.map.kakao.com/26431427",
+      "region": "경기"
     },
     {
       "title": "신정역",
@@ -1931,9 +2039,18 @@
       "lat": 37.583746353282,
       "lng": 126.909494991105,
       "address": "서울 은평구 증산로 지하 306",
-      "description": "2호선, 6호선, 부산2호선",
+      "description": "6호선",
       "url": "http://place.map.kakao.com/25037150",
       "region": "서울"
+    },
+    {
+      "title": "증산역",
+      "lat": 35.3082580738269,
+      "lng": 129.010288175541,
+      "address": "경남 양산시 물금읍 메기로 168",
+      "description": "부산2호선",
+      "url": "http://place.map.kakao.com/11474369",
+      "region": "경남"
     },
     {
       "title": "구산역",
@@ -2120,9 +2237,18 @@
       "lat": 37.5696355653344,
       "lng": 126.899098148061,
       "address": "서울 마포구 월드컵로 지하 240",
-      "description": "1호선, 6호선, 대전1호선",
+      "description": "6호선",
       "url": "http://place.map.kakao.com/21160672",
       "region": "서울"
+    },
+    {
+      "title": "월드컵경기장역",
+      "lat": 36.366863297514,
+      "lng": 127.317844996337,
+      "address": "대전 유성구 한밭대로 지하 155",
+      "description": "대전1호선",
+      "url": "http://place.map.kakao.com/21160998",
+      "region": "대전"
     },
     {
       "title": "창신역",
@@ -2255,7 +2381,7 @@
       "lat": 37.5062431189861,
       "lng": 126.676149271119,
       "address": "인천 서구 길주로 지하 120",
-      "description": "2호선, 7호선, 인천2호선",
+      "description": "7호선, 인천2호선",
       "url": "http://place.map.kakao.com/183850300",
       "region": "인천"
     },
@@ -2480,7 +2606,7 @@
       "lat": 37.50743350044892,
       "lng": 126.72143971800028,
       "address": "인천 부평구 길주로 지하 527",
-      "description": "1호선, 7호선, 인천1호선",
+      "description": "7호선, 인천1호선",
       "url": "http://place.map.kakao.com/12344089",
       "region": "인천"
     },
@@ -2615,9 +2741,18 @@
       "lat": 37.4409230460675,
       "lng": 127.147538132656,
       "address": "경기 성남시 수정구 산성대로 지하 280",
-      "description": "1호선, 8호선, 대전1호선",
+      "description": "8호선",
       "url": "http://place.map.kakao.com/21161047",
       "region": "경기"
+    },
+    {
+      "title": "신흥역",
+      "lat": 36.3196578116318,
+      "lng": 127.448799412933,
+      "address": "대전 동구 옥천로 지하 70",
+      "description": "대전1호선",
+      "url": "http://place.map.kakao.com/21161033",
+      "region": "대전"
     },
     {
       "title": "복정역",
@@ -2786,7 +2921,7 @@
       "lat": 37.56196757232288,
       "lng": 126.80191361988808,
       "address": "서울 강서구 하늘길 지하 77",
-      "description": "9호선, 공항철도, 김포골드라인, 서해선",
+      "description": "9호선, 서해선, 공항철도, 김포골드라인",
       "url": "http://place.map.kakao.com/8237395",
       "region": "서울"
     },
@@ -3164,9 +3299,18 @@
       "lat": 37.52960692295435,
       "lng": 126.96475753303035,
       "address": "서울 용산구 한강대로23길 55",
-      "description": "2호선, 경의중앙선, 대구2호선",
+      "description": "경의중앙선",
       "url": "http://place.map.kakao.com/21160921",
       "region": "서울"
+    },
+    {
+      "title": "용산역",
+      "lat": 35.8490710634655,
+      "lng": 128.528808727588,
+      "address": "대구 달서구 달구벌대로 지하 1476",
+      "description": "대구2호선",
+      "url": "http://place.map.kakao.com/21160495",
+      "region": "대구"
     },
     {
       "title": "도심역",
@@ -3290,9 +3434,18 @@
       "lat": 37.604027962835566,
       "lng": 127.19466908658632,
       "address": "경기 남양주시 경강로 237",
-      "description": "1호선, 경의중앙선, 부산1호선",
+      "description": "경의중앙선",
       "url": "http://place.map.kakao.com/25042939",
       "region": "경기"
+    },
+    {
+      "title": "양정역",
+      "lat": 35.1727945202073,
+      "lng": 129.071093977334,
+      "address": "부산 부산진구 중앙대로 지하 930",
+      "description": "부산1호선",
+      "url": "http://place.map.kakao.com/1471338992",
+      "region": "부산"
     },
     {
       "title": "강매역",
@@ -3335,16 +3488,25 @@
       "lat": 37.4818020661568,
       "lng": 127.593795306663,
       "address": "경기 양평군 용문면 용문역길 21",
-      "description": "1호선, 경의중앙선, 대전1호선",
+      "description": "경의중앙선",
       "url": "http://place.map.kakao.com/11657669",
       "region": "경기"
+    },
+    {
+      "title": "용문역",
+      "lat": 36.33816667133553,
+      "lng": 127.39341085383948,
+      "address": "대전 서구 계룡로 지하 644",
+      "description": "대전1호선",
+      "url": "http://place.map.kakao.com/21160995",
+      "region": "대전"
     },
     {
       "title": "판교역",
       "lat": 37.39477752734142,
       "lng": 127.11119782955879,
       "address": "경기 성남시 분당구 판교역로 지하 160",
-      "description": "경강선, 분당선, 신분당선",
+      "description": "분당선, 신분당선, 경강선",
       "url": "http://place.map.kakao.com/21161059",
       "region": "경기"
     },
@@ -3407,9 +3569,18 @@
       "lat": 37.3243773830569,
       "lng": 127.107505020642,
       "address": "경기 용인시 수지구 포은대로 530",
-      "description": "2호선, 대구2호선, 분당선, 수인분당선",
+      "description": "분당선, 수인분당선",
       "url": "http://place.map.kakao.com/21160931",
       "region": "경기"
+    },
+    {
+      "title": "죽전역",
+      "lat": 35.85027804918893,
+      "lng": 128.53760834986548,
+      "address": "대구 달서구 달구벌대로 지하 1560",
+      "description": "대구2호선",
+      "url": "http://place.map.kakao.com/21160965",
+      "region": "대구"
     },
     {
       "title": "영통역",
@@ -3425,9 +3596,18 @@
       "lat": 37.3378429142383,
       "lng": 127.102870440698,
       "address": "경기 용인시 수지구 신수로 지하 760",
-      "description": "3호선, 대구3호선, 분당선, 신분당선",
+      "description": "분당선, 신분당선",
       "url": "http://place.map.kakao.com/27392613",
       "region": "경기"
+    },
+    {
+      "title": "동천역",
+      "lat": 35.9377101876855,
+      "lng": 128.556683022262,
+      "address": "대구 북구 팔거천동로 147",
+      "description": "대구3호선",
+      "url": "http://place.map.kakao.com/24202385",
+      "region": "대구"
     },
     {
       "title": "광교중앙역",
@@ -3515,7 +3695,7 @@
       "lat": 37.298978850791976,
       "lng": 127.10569583571818,
       "address": "경기 용인시 기흥구 용구대로 2403",
-      "description": "GTX-A, 분당선, 수인분당선",
+      "description": "분당선, 수인분당선, GTX-A",
       "url": "http://place.map.kakao.com/15110701",
       "region": "경기"
     },
@@ -3668,7 +3848,7 @@
       "lat": 37.26628317764347,
       "lng": 127.00024802619026,
       "address": "경기 수원시 팔달구 덕영대로 924",
-      "description": "1호선, 분당선, 수인분당선",
+      "description": "분당선, 수인분당선, 1호선",
       "url": "http://place.map.kakao.com/15110712",
       "region": "경기"
     },
@@ -3740,9 +3920,18 @@
       "lat": 37.6373551430559,
       "lng": 127.207533674718,
       "address": "경기 남양주시 금곡로19번길 47",
-      "description": "2호선, 경춘선, 부산2호선",
+      "description": "경춘선",
       "url": "http://place.map.kakao.com/21160883",
       "region": "경기"
+    },
+    {
+      "title": "금곡역",
+      "lat": 35.2672407272281,
+      "lng": 129.016807358278,
+      "address": "부산 북구 금곡대로 685",
+      "description": "부산2호선",
+      "url": "http://place.map.kakao.com/21161077",
+      "region": "부산"
     },
     {
       "title": "강촌역",
@@ -3938,7 +4127,7 @@
       "lat": 37.3947450401644,
       "lng": 127.119560339499,
       "address": "경기 성남시 분당구 백현동 545-1",
-      "description": "GTX-A, 경강선",
+      "description": "경강선, GTX-A",
       "url": "http://place.map.kakao.com/884577125",
       "region": "경기"
     },
@@ -3956,9 +4145,18 @@
       "lat": 37.43924604520613,
       "lng": 126.78678508124932,
       "address": "경기 시흥시 신천로 지하 92",
-      "description": "1호선, 대구1호선, 서해선",
+      "description": "서해선",
       "url": "http://place.map.kakao.com/1036562389",
       "region": "경기"
+    },
+    {
+      "title": "신천역",
+      "lat": 35.8746867238902,
+      "lng": 128.617860126635,
+      "address": "대구 동구 동부로 지하 41",
+      "description": "대구1호선",
+      "url": "http://place.map.kakao.com/21161088",
+      "region": "대구"
     },
     {
       "title": "시흥대야역",
@@ -4033,7 +4231,7 @@
       "region": "경기"
     },
     {
-      "title": "내포역",
+      "title": "내포역 (2027년예정)",
       "lat": 36.6868574067942,
       "lng": 126.72222911856,
       "address": "충남 예산군 삽교읍 삽교리 86-3",
@@ -4172,7 +4370,7 @@
       "lat": 37.57177084709832,
       "lng": 126.73627367694554,
       "address": "인천 계양구 다남로 24",
-      "description": "1호선, 공항철도, 인천1호선",
+      "description": "공항철도, 인천1호선",
       "url": "http://place.map.kakao.com/21161052",
       "region": "인천"
     },
@@ -4181,7 +4379,7 @@
       "lat": 37.56925281871912,
       "lng": 126.67364220875055,
       "address": "인천 서구 검바위로 26",
-      "description": "2호선, 공항철도, 인천2호선",
+      "description": "공항철도, 인천2호선",
       "url": "http://place.map.kakao.com/21160719",
       "region": "인천"
     },
@@ -4397,9 +4595,18 @@
       "lat": 37.601213413053,
       "lng": 126.770325947061,
       "address": "경기 김포시 고촌읍 김포대로 지하 350",
-      "description": "4호선, 김포골드라인, 부산4호선",
+      "description": "김포골드라인",
       "url": "http://place.map.kakao.com/1339411490",
       "region": "경기"
+    },
+    {
+      "title": "고촌역",
+      "lat": 35.2360135557695,
+      "lng": 129.160475584356,
+      "address": "부산 기장군 철마면 반송로 991",
+      "description": "부산4호선",
+      "url": "http://place.map.kakao.com/13016020",
+      "region": "부산"
     },
     {
       "title": "장기역",
@@ -4478,9 +4685,18 @@
       "lat": 37.269101384338924,
       "lng": 127.15269056435368,
       "address": "경기 용인시 기흥구 동백죽전대로 314",
-      "description": "2호선, 부산2호선, 에버라인",
+      "description": "에버라인",
       "url": "http://place.map.kakao.com/21160887",
       "region": "경기"
+    },
+    {
+      "title": "동백역",
+      "lat": 35.1613367503845,
+      "lng": 129.147990152182,
+      "address": "부산 해운대구 해운대로 지하 522",
+      "description": "부산2호선",
+      "url": "http://place.map.kakao.com/21160899",
+      "region": "부산"
     },
     {
       "title": "삼가역",
@@ -4730,7 +4946,7 @@
       "lat": 37.5302710952892,
       "lng": 126.722560827351,
       "address": "인천 계양구 계양대로 지하 73",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/27455724",
       "region": "인천"
     },
@@ -4739,7 +4955,7 @@
       "lat": 37.4670826685298,
       "lng": 126.707918490817,
       "address": "인천 남동구 경인로 지하 642",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160988",
       "region": "인천"
     },
@@ -4748,7 +4964,7 @@
       "lat": 37.5433079533771,
       "lng": 126.7277312169,
       "address": "인천 계양구 경명대로 지하 1089",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160989",
       "region": "인천"
     },
@@ -4757,7 +4973,7 @@
       "lat": 37.5922015078228,
       "lng": 126.71338036262,
       "address": "인천 서구 당하동 1238",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/1073160060",
       "region": "인천"
     },
@@ -4766,7 +4982,7 @@
       "lat": 37.5171177260985,
       "lng": 126.721550773775,
       "address": "인천 부평구 부평대로 지하 286",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161102",
       "region": "인천"
     },
@@ -4775,7 +4991,7 @@
       "lat": 37.3862063921103,
       "lng": 126.639542234479,
       "address": "인천 연수구 인천타워대로 지하 155",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161020",
       "region": "인천"
     },
@@ -4784,7 +5000,7 @@
       "lat": 37.5450120455649,
       "lng": 126.738633379569,
       "address": "인천 계양구 장제로 지하 875",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161025",
       "region": "인천"
     },
@@ -4793,7 +5009,7 @@
       "lat": 37.45773583769292,
       "lng": 126.70223575350143,
       "address": "인천 남동구 예술로 지하 264",
-      "description": "1호선, 2호선, 인천1호선, 인천2호선",
+      "description": "인천1호선, 인천2호선",
       "url": "http://place.map.kakao.com/11474514",
       "region": "인천"
     },
@@ -4802,7 +5018,7 @@
       "lat": 37.4269470843403,
       "lng": 126.69892316532737,
       "address": "인천 연수구 경원대로 지하 480",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161023",
       "region": "인천"
     },
@@ -4811,7 +5027,7 @@
       "lat": 37.4983641942962,
       "lng": 126.722285373949,
       "address": "인천 부평구 부평대로 지하 69",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160974",
       "region": "인천"
     },
@@ -4820,7 +5036,7 @@
       "lat": 37.4855071635951,
       "lng": 126.718606270842,
       "address": "인천 부평구 경인로 지하 877",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161024",
       "region": "인천"
     },
@@ -4829,7 +5045,7 @@
       "lat": 37.4123688782408,
       "lng": 126.687889114089,
       "address": "인천 연수구 경원대로 지하 285",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160987",
       "region": "인천"
     },
@@ -4838,7 +5054,7 @@
       "lat": 37.5536612597496,
       "lng": 126.74506746745,
       "address": "인천 계양구 장제로 지하 992",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160511",
       "region": "인천"
     },
@@ -4847,7 +5063,7 @@
       "lat": 37.4485259845342,
       "lng": 126.700916120922,
       "address": "인천 남동구 예술로 지하 172",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160970",
       "region": "인천"
     },
@@ -4856,7 +5072,7 @@
       "lat": 37.6026518827203,
       "lng": 126.6984792052,
       "address": "인천 서구 원당동 652",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/1073358789",
       "region": "인천"
     },
@@ -4865,7 +5081,7 @@
       "lat": 37.3822809834253,
       "lng": 126.656299104753,
       "address": "인천 연수구 송도국제대로 지하 150",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160969",
       "region": "인천"
     },
@@ -4874,7 +5090,7 @@
       "lat": 37.4419166733897,
       "lng": 126.699694889876,
       "address": "인천 미추홀구 예술로 지하 85",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161098",
       "region": "인천"
     },
@@ -4883,7 +5099,7 @@
       "lat": 37.538124360683,
       "lng": 126.722631302651,
       "address": "인천 계양구 계양대로 지하 162",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160973",
       "region": "인천"
     },
@@ -4892,7 +5108,7 @@
       "lat": 37.404576119239,
       "lng": 126.680851046438,
       "address": "인천 연수구 경원대로 지하 180",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160968",
       "region": "인천"
     },
@@ -4901,7 +5117,7 @@
       "lat": 37.406920219431996,
       "lng": 126.62601790846256,
       "address": "인천 연수구 인천타워대로 지하 424",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/487445940",
       "region": "인천"
     },
@@ -4910,7 +5126,7 @@
       "lat": 37.6024064488687,
       "lng": 126.688281437599,
       "address": "인천 서구 불로동 606-3",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/1073106854",
       "region": "인천"
     },
@@ -4919,7 +5135,7 @@
       "lat": 37.38844295632,
       "lng": 126.662206121031,
       "address": "인천 연수구 송도국제대로 지하 66",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161097",
       "region": "인천"
     },
@@ -4928,7 +5144,7 @@
       "lat": 37.37750721892,
       "lng": 126.645861381029,
       "address": "인천 연수구 인천타워대로 지하 57",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160985",
       "region": "인천"
     },
@@ -4937,7 +5153,7 @@
       "lat": 37.477834830017315,
       "lng": 126.71029378166388,
       "address": "인천 부평구 경인로 지하 765",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161100",
       "region": "인천"
     },
@@ -4946,7 +5162,7 @@
       "lat": 37.3928455432657,
       "lng": 126.634988814949,
       "address": "인천 연수구 인천타워대로 지하 240",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161096",
       "region": "인천"
     },
@@ -4955,7 +5171,7 @@
       "lat": 37.5662988350728,
       "lng": 126.742679119614,
       "address": "인천 계양구 장제로 1136",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161101",
       "region": "인천"
     },
@@ -4964,7 +5180,7 @@
       "lat": 37.3979424375979,
       "lng": 126.673448014592,
       "address": "인천 연수구 경원대로 지하 80",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161021",
       "region": "인천"
     },
@@ -4973,7 +5189,7 @@
       "lat": 37.4181081550544,
       "lng": 126.694019681969,
       "address": "인천 연수구 경원대로 지하 368",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21161099",
       "region": "인천"
     },
@@ -4982,7 +5198,7 @@
       "lat": 37.4346513434001,
       "lng": 126.698449383593,
       "address": "인천 연수구 예술로 지하 2",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160986",
       "region": "인천"
     },
@@ -4991,7 +5207,7 @@
       "lat": 37.3996578386606,
       "lng": 126.630542158102,
       "address": "인천 연수구 인천타워대로 지하 334",
-      "description": "1호선, 인천1호선",
+      "description": "인천1호선",
       "url": "http://place.map.kakao.com/21160984",
       "region": "인천"
     },
@@ -5000,7 +5216,7 @@
       "lat": 37.5976340869751,
       "lng": 126.667223457118,
       "address": "인천 서구 완정로 68",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/87949608",
       "region": "인천"
     },
@@ -5009,7 +5225,7 @@
       "lat": 37.4576690774014,
       "lng": 126.692353074376,
       "address": "인천 미추홀구 구월로 지하 19",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1232260667",
       "region": "인천"
     },
@@ -5018,7 +5234,7 @@
       "lat": 37.5949434686845,
       "lng": 126.627907494962,
       "address": "인천 서구 검단로 187",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1932195227",
       "region": "인천"
     },
@@ -5027,7 +5243,7 @@
       "lat": 37.4898360731372,
       "lng": 126.675242029489,
       "address": "인천 서구 가석로 67",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/2023358671",
       "region": "인천"
     },
@@ -5036,7 +5252,7 @@
       "lat": 37.4841504406643,
       "lng": 126.683769149033,
       "address": "인천 서구 열우물로 252",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1382062628",
       "region": "인천"
     },
@@ -5045,7 +5261,7 @@
       "lat": 37.5175263931377,
       "lng": 126.676823324228,
       "address": "인천 서구 가남로 400",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/737814794",
       "region": "인천"
     },
@@ -5054,7 +5270,7 @@
       "lat": 37.5248168619511,
       "lng": 126.675357432309,
       "address": "인천 서구 봉오대로 234",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1729778871",
       "region": "인천"
     },
@@ -5063,7 +5279,7 @@
       "lat": 37.4549755117309,
       "lng": 126.731736248865,
       "address": "인천 남동구 구월로 지하 367",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/214182212",
       "region": "인천"
     },
@@ -5072,7 +5288,7 @@
       "lat": 37.5513145630525,
       "lng": 126.677107520162,
       "address": "인천 서구 서곶로 382",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/963256366",
       "region": "인천"
     },
@@ -5081,7 +5297,7 @@
       "lat": 37.5928390497566,
       "lng": 126.673033100577,
       "address": "인천 서구 원당대로 650",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1655613640",
       "region": "인천"
     },
@@ -5090,7 +5306,7 @@
       "lat": 37.595129055954,
       "lng": 126.642477372147,
       "address": "인천 서구 검단로 323",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/775471990",
       "region": "인천"
     },
@@ -5099,7 +5315,7 @@
       "lat": 37.5440446154284,
       "lng": 126.676844673062,
       "address": "인천 서구 서곶로 294",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/2107697625",
       "region": "인천"
     },
@@ -5108,7 +5324,7 @@
       "lat": 37.6016612295398,
       "lng": 126.65643839271,
       "address": "인천 서구 검단로 473",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/824066386",
       "region": "인천"
     },
@@ -5117,7 +5333,7 @@
       "lat": 37.58484825991949,
       "lng": 126.67600264877679,
       "address": "인천 서구 서곶로 760",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/641502477",
       "region": "인천"
     },
@@ -5126,7 +5342,7 @@
       "lat": 37.4558628174958,
       "lng": 126.719621557604,
       "address": "인천 남동구 구월로 지하 255",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/260198474",
       "region": "인천"
     },
@@ -5135,7 +5351,7 @@
       "lat": 37.4583852139167,
       "lng": 126.681074618963,
       "address": "인천 미추홀구 경인로 지하 371",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1214858746",
       "region": "인천"
     },
@@ -5144,7 +5360,7 @@
       "lat": 37.4567884972007,
       "lng": 126.710422456642,
       "address": "인천 남동구 구월로 지하 181",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1362443467",
       "region": "인천"
     },
@@ -5153,7 +5369,7 @@
       "lat": 37.4484766105613,
       "lng": 126.752851963764,
       "address": "인천 남동구 수인로 3677",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/210123408",
       "region": "인천"
     },
@@ -5162,7 +5378,7 @@
       "lat": 37.4396425989597,
       "lng": 126.759606687799,
       "address": "인천 남동구 매소홀로 1229",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1127858078",
       "region": "인천"
     },
@@ -5171,7 +5387,7 @@
       "lat": 37.4481747324298,
       "lng": 126.736565773149,
       "address": "인천 남동구 인주대로 지하 889",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1376643842",
       "region": "인천"
     },
@@ -5180,7 +5396,7 @@
       "lat": 37.47391267095278,
       "lng": 126.68122005538342,
       "address": "인천 서구 방축로 343",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/1135226397",
       "region": "인천"
     },
@@ -5189,7 +5405,7 @@
       "lat": 37.5611257424349,
       "lng": 126.677531491203,
       "address": "인천 서구 서곶로 492",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/212139049",
       "region": "인천"
     },
@@ -5198,7 +5414,7 @@
       "lat": 37.5003434953542,
       "lng": 126.675870541598,
       "address": "인천 서구 가석로 169",
-      "description": "2호선, 인천2호선",
+      "description": "인천2호선",
       "url": "http://place.map.kakao.com/385437291",
       "region": "인천"
     },
@@ -5207,7 +5423,7 @@
       "lat": 35.157939062512,
       "lng": 129.059300883545,
       "address": "부산 부산진구 중앙대로 지하 730",
-      "description": "1호선, 2호선, 부산1호선, 부산2호선",
+      "description": "부산1호선, 부산2호선",
       "url": "http://place.map.kakao.com/21160473",
       "region": "부산"
     },
@@ -5216,8 +5432,17 @@
       "lat": 35.20561606540984,
       "lng": 129.0784743842795,
       "address": "부산 동래구 중앙대로 1324",
-      "description": "1호선, 4호선, 동해선, 부산1호선, 부산4호선",
+      "description": "부산1호선, 부산4호선",
       "url": "http://place.map.kakao.com/21160940",
+      "region": "부산"
+    },
+    {
+      "title": "동래역",
+      "lat": 35.1971960342806,
+      "lng": 129.09132502632,
+      "address": "부산 동래구 낙민로 27",
+      "description": "동해선",
+      "url": "http://place.map.kakao.com/1350783167",
       "region": "부산"
     },
     {
@@ -5225,7 +5450,7 @@
       "lat": 35.1860379097119,
       "lng": 129.081603364757,
       "address": "부산 연제구 중앙대로 지하 1101",
-      "description": "1호선, 3호선, 부산1호선, 부산3호선",
+      "description": "부산1호선, 부산3호선",
       "url": "http://place.map.kakao.com/21161067",
       "region": "부산"
     },
@@ -5234,7 +5459,7 @@
       "lat": 35.1062385683347,
       "lng": 128.966786546793,
       "address": "부산 사하구 낙동남로 지하 1415",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160471",
       "region": "부산"
     },
@@ -5243,7 +5468,7 @@
       "lat": 35.1145412381182,
       "lng": 129.039344263316,
       "address": "부산 동구 중앙대로 지하 200",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160487",
       "region": "부산"
     },
@@ -5252,7 +5477,7 @@
       "lat": 35.2838438093648,
       "lng": 129.09502424558,
       "address": "부산 금정구 중앙대로 2238",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160892",
       "region": "부산"
     },
@@ -5261,7 +5486,7 @@
       "lat": 35.2202705693472,
       "lng": 129.086435133803,
       "address": "부산 동래구 중앙대로 1520",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160876",
       "region": "부산"
     },
@@ -5270,7 +5495,7 @@
       "lat": 35.22964948660202,
       "lng": 129.08942537773808,
       "address": "부산 금정구 장전온천천로 48",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160490",
       "region": "부산"
     },
@@ -5279,7 +5504,7 @@
       "lat": 35.2125752875352,
       "lng": 129.079702639717,
       "address": "부산 동래구 중앙대로 1414",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160890",
       "region": "부산"
     },
@@ -5288,7 +5513,7 @@
       "lat": 35.23807481304964,
       "lng": 129.08814333961908,
       "address": "부산 금정구 장전온천천로 144",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21161068",
       "region": "부산"
     },
@@ -5297,7 +5522,7 @@
       "lat": 35.2472824601624,
       "lng": 129.091288325323,
       "address": "부산 금정구 금정로233번길 46",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160941",
       "region": "부산"
     },
@@ -5306,7 +5531,7 @@
       "lat": 35.1473134465248,
       "lng": 129.05924810527,
       "address": "부산 부산진구 중앙대로 지하 612",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160939",
       "region": "부산"
     },
@@ -5315,7 +5540,7 @@
       "lat": 35.11032054771603,
       "lng": 129.0177333285286,
       "address": "부산 서구 구덕로 지하 290",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160503",
       "region": "부산"
     },
@@ -5324,7 +5549,7 @@
       "lat": 35.2570169811596,
       "lng": 129.091371463912,
       "address": "부산 금정구 중앙대로 1927-1",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160505",
       "region": "부산"
     },
@@ -5333,7 +5558,7 @@
       "lat": 35.0952286648109,
       "lng": 128.960618556493,
       "address": "부산 사하구 하신번영로 140",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/25038518",
       "region": "부산"
     },
@@ -5342,7 +5567,7 @@
       "lat": 35.097195508119285,
       "lng": 129.0260699211048,
       "address": "부산 중구 구덕로 지하 80",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160488",
       "region": "부산"
     },
@@ -5351,7 +5576,7 @@
       "lat": 35.09790554832192,
       "lng": 129.03473562824252,
       "address": "부산 중구 구덕로 지하 12",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160889",
       "region": "부산"
     },
@@ -5360,7 +5585,7 @@
       "lat": 35.27306328395934,
       "lng": 129.09264111025075,
       "address": "부산 금정구 중앙대로 2107",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160474",
       "region": "부산"
     },
@@ -5369,7 +5594,7 @@
       "lat": 35.14080345890983,
       "lng": 129.0593528545117,
       "address": "부산 동구 범일로 지하 108",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160456",
       "region": "부산"
     },
@@ -5378,7 +5603,7 @@
       "lat": 35.1205304214806,
       "lng": 129.042661154399,
       "address": "부산 동구 중앙대로 지하 264",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160937",
       "region": "부산"
     },
@@ -5387,7 +5612,7 @@
       "lat": 35.081961734507,
       "lng": 128.977350698097,
       "address": "부산 사하구 다대로 지하 230",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/254492587",
       "region": "부산"
     },
@@ -5396,7 +5621,7 @@
       "lat": 35.1007852525409,
       "lng": 129.019785649708,
       "address": "부산 서구 구덕로 지하 170",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160472",
       "region": "부산"
     },
@@ -5405,16 +5630,25 @@
       "lat": 35.265202901569,
       "lng": 129.092416924607,
       "address": "부산 금정구 중앙대로 2019-1",
-      "description": "1호선, 3호선, 대구3호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160891",
       "region": "부산"
+    },
+    {
+      "title": "남산역",
+      "lat": 35.8566969364077,
+      "lng": 128.583462127899,
+      "address": "대구 중구 남산로 2",
+      "description": "대구3호선",
+      "url": "http://place.map.kakao.com/24202370",
+      "region": "대구"
     },
     {
       "title": "괴정역",
       "lat": 35.0999358214704,
       "lng": 128.992487217814,
       "address": "부산 사하구 낙동대로 지하 221",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/25040712",
       "region": "부산"
     },
@@ -5423,7 +5657,7 @@
       "lat": 35.1625594501813,
       "lng": 129.062946515635,
       "address": "부산 부산진구 중앙대로 지하 786",
-      "description": "1호선, 동해선, 부산1호선",
+      "description": "부산1호선, 동해선",
       "url": "http://place.map.kakao.com/25051229",
       "region": "부산"
     },
@@ -5432,7 +5666,7 @@
       "lat": 35.1035668582463,
       "lng": 128.973696685691,
       "address": "부산 사하구 낙동대로 지하 405",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/25036966",
       "region": "부산"
     },
@@ -5441,7 +5675,7 @@
       "lat": 35.12779789319554,
       "lng": 129.04786649362282,
       "address": "부산 동구 중앙대로 지하 350",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21161066",
       "region": "부산"
     },
@@ -5450,7 +5684,7 @@
       "lat": 35.0481605146045,
       "lng": 128.965782934439,
       "address": "부산 사하구 다대로 지하 692",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/973636400",
       "region": "부산"
     },
@@ -5459,7 +5693,7 @@
       "lat": 35.11091202151769,
       "lng": 129.01213289704364,
       "address": "부산 서구 대영로 지하 1",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160873",
       "region": "부산"
     },
@@ -5468,8 +5702,17 @@
       "lat": 35.1343820073548,
       "lng": 129.054455383044,
       "address": "부산 동구 중앙대로 지하 446",
-      "description": "1호선, 동해선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160874",
+      "region": "부산"
+    },
+    {
+      "title": "좌천역",
+      "lat": 35.3118321698097,
+      "lng": 129.245294716051,
+      "address": "부산 기장군 장안읍 해맞이로 2",
+      "description": "동해선",
+      "url": "http://place.map.kakao.com/1650681351",
       "region": "부산"
     },
     {
@@ -5477,7 +5720,7 @@
       "lat": 35.0997677417715,
       "lng": 128.983395006332,
       "address": "부산 사하구 낙동대로 지하 309",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21160938",
       "region": "부산"
     },
@@ -5486,7 +5729,7 @@
       "lat": 35.1031581926258,
       "lng": 128.999943470572,
       "address": "부산 사하구 낙동대로 지하 141",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/21161065",
       "region": "부산"
     },
@@ -5495,7 +5738,7 @@
       "lat": 35.065334914564,
       "lng": 128.979663395342,
       "address": "부산 사하구 다대로 지하 422",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/731805011",
       "region": "부산"
     },
@@ -5504,7 +5747,7 @@
       "lat": 35.0576775626584,
       "lng": 128.971306868032,
       "address": "부산 사하구 다대로 지하 548",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/1395670882",
       "region": "부산"
     },
@@ -5513,7 +5756,7 @@
       "lat": 35.0747429522444,
       "lng": 128.976593289614,
       "address": "부산 사하구 다대로 지하 310",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/1835252446",
       "region": "부산"
     },
@@ -5522,7 +5765,7 @@
       "lat": 35.0897562520489,
       "lng": 128.973526035966,
       "address": "부산 사하구 신산로 지하 168",
-      "description": "1호선, 부산1호선",
+      "description": "부산1호선",
       "url": "http://place.map.kakao.com/1360159964",
       "region": "부산"
     },
@@ -5531,7 +5774,7 @@
       "lat": 35.1636479638612,
       "lng": 129.158897240251,
       "address": "부산 해운대구 해운대로 지하 626",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21161075",
       "region": "부산"
     },
@@ -5540,7 +5783,7 @@
       "lat": 35.157858583447,
       "lng": 129.113145418291,
       "address": "부산 수영구 수영로 지하 576",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21161071",
       "region": "부산"
     },
@@ -5549,7 +5792,7 @@
       "lat": 35.1699558313015,
       "lng": 129.177022545045,
       "address": "부산 해운대구 해운대로 지하 820",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/17491873",
       "region": "부산"
     },
@@ -5558,7 +5801,7 @@
       "lat": 35.165680361287,
       "lng": 129.114809550972,
       "address": "부산 수영구 수영로 지하 677",
-      "description": "2호선, 3호선, 부산2호선, 부산3호선",
+      "description": "부산2호선, 부산3호선",
       "url": "http://place.map.kakao.com/21161070",
       "region": "부산"
     },
@@ -5567,7 +5810,7 @@
       "lat": 35.1530881426641,
       "lng": 129.06538457863,
       "address": "부산 부산진구 전포대로 지하 181",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160893",
       "region": "부산"
     },
@@ -5576,7 +5819,7 @@
       "lat": 35.1504864668448,
       "lng": 129.002874383901,
       "address": "부산 사상구 가야대로 지하 292",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160881",
       "region": "부산"
     },
@@ -5585,7 +5828,7 @@
       "lat": 35.210434749918534,
       "lng": 129.00517512816737,
       "address": "부산 북구 금곡대로 지하 14",
-      "description": "2호선, 3호선, 부산2호선, 부산3호선",
+      "description": "부산2호선, 부산3호선",
       "url": "http://place.map.kakao.com/21161072",
       "region": "부산"
     },
@@ -5594,7 +5837,7 @@
       "lat": 35.1532421422541,
       "lng": 129.020568202069,
       "address": "부산 부산진구 가야대로 지하 442",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160946",
       "region": "부산"
     },
@@ -5603,7 +5846,7 @@
       "lat": 35.14969257761234,
       "lng": 129.11096146101232,
       "address": "부산 수영구 수영로 지하 482",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160879",
       "region": "부산"
     },
@@ -5612,7 +5855,7 @@
       "lat": 35.1351251955716,
       "lng": 129.092118524312,
       "address": "부산 남구 수영로 지하 242",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160898",
       "region": "부산"
     },
@@ -5621,7 +5864,7 @@
       "lat": 35.2357925046576,
       "lng": 129.01386233425,
       "address": "부산 북구 금곡대로 지하 311",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160458",
       "region": "부산"
     },
@@ -5630,7 +5873,7 @@
       "lat": 35.1420150673392,
       "lng": 129.107838322896,
       "address": "부산 수영구 수영로 지하 410",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160506",
       "region": "부산"
     },
@@ -5639,7 +5882,7 @@
       "lat": 35.1376003833537,
       "lng": 129.100519243797,
       "address": "부산 남구 수영로 지하 324",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160944",
       "region": "부산"
     },
@@ -5648,7 +5891,7 @@
       "lat": 35.1626895550862,
       "lng": 128.984408359544,
       "address": "부산 사상구 사상로 지하 203",
-      "description": "2호선, 부산2호선, 부산김해경전철",
+      "description": "부산2호선, 부산김해경전철",
       "url": "http://place.map.kakao.com/21160880",
       "region": "부산"
     },
@@ -5657,7 +5900,7 @@
       "lat": 35.1540609901883,
       "lng": 129.032596868027,
       "address": "부산 부산진구 가야대로 지하 554",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21161073",
       "region": "부산"
     },
@@ -5666,7 +5909,7 @@
       "lat": 35.1390425736004,
       "lng": 129.067394840249,
       "address": "부산 남구 전포대로 지하 17",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160459",
       "region": "부산"
     },
@@ -5675,7 +5918,7 @@
       "lat": 35.168948888080884,
       "lng": 129.1317651180283,
       "address": "부산 해운대구 센텀남대로 지하 76",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21161001",
       "region": "부산"
     },
@@ -5684,7 +5927,7 @@
       "lat": 35.2231832264448,
       "lng": 129.009105154949,
       "address": "부산 북구 금곡대로 지하 160",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160878",
       "region": "부산"
     },
@@ -5693,7 +5936,7 @@
       "lat": 35.1512560458061,
       "lng": 129.012118730836,
       "address": "부산 사상구 가야대로 지하 362-1",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160896",
       "region": "부산"
     },
@@ -5702,7 +5945,7 @@
       "lat": 35.1347250910939,
       "lng": 129.084381118075,
       "address": "부산 남구 수영로 지하 170",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160948",
       "region": "부산"
     },
@@ -5711,7 +5954,7 @@
       "lat": 35.1553461063375,
       "lng": 128.99147643385,
       "address": "부산 사상구 사상로 지하 93-1",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160895",
       "region": "부산"
     },
@@ -5720,7 +5963,7 @@
       "lat": 35.1895447446342,
       "lng": 128.988569733613,
       "address": "부산 사상구 사상로 지하 498",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/25039270",
       "region": "부산"
     },
@@ -5729,7 +5972,7 @@
       "lat": 35.157364020045065,
       "lng": 129.0501711324292,
       "address": "부산 부산진구 가야대로 지하 719",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160882",
       "region": "부산"
     },
@@ -5738,7 +5981,7 @@
       "lat": 35.1559353192489,
       "lng": 129.043313481032,
       "address": "부산 부산진구 가야대로 지하 650",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21161074",
       "region": "부산"
     },
@@ -5747,7 +5990,7 @@
       "lat": 35.173322543115,
       "lng": 128.983801941146,
       "address": "부산 사상구 사상로 지하 320-1",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160491",
       "region": "부산"
     },
@@ -5756,7 +5999,7 @@
       "lat": 35.1966903928098,
       "lng": 128.994852323186,
       "address": "부산 북구 백양대로 지하 1026",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160950",
       "region": "부산"
     },
@@ -5765,7 +6008,7 @@
       "lat": 35.24625350303768,
       "lng": 129.01286767118953,
       "address": "부산 북구 금곡대로 지하 440",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160942",
       "region": "부산"
     },
@@ -5774,7 +6017,7 @@
       "lat": 35.1688335422589,
       "lng": 129.138867985335,
       "address": "부산 해운대구 해운대로 지하 396",
-      "description": "2호선, 동해선, 부산2호선",
+      "description": "부산2호선, 동해선",
       "url": "http://place.map.kakao.com/21160949",
       "region": "부산"
     },
@@ -5783,7 +6026,7 @@
       "lat": 35.2028092156488,
       "lng": 128.999556181232,
       "address": "부산 북구 백양대로 지하 1094",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160897",
       "region": "부산"
     },
@@ -5792,7 +6035,7 @@
       "lat": 35.1355628667805,
       "lng": 129.074424176843,
       "address": "부산 남구 수영로 지하 70",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160943",
       "region": "부산"
     },
@@ -5801,7 +6044,7 @@
       "lat": 35.1670631931086,
       "lng": 129.122097073991,
       "address": "부산 수영구 수영로 지하 769",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160894",
       "region": "부산"
     },
@@ -5810,7 +6053,7 @@
       "lat": 35.1804122918444,
       "lng": 128.985603131583,
       "address": "부산 사상구 사상로 지하 409",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160945",
       "region": "부산"
     },
@@ -5819,7 +6062,7 @@
       "lat": 35.1734942170739,
       "lng": 129.09558177246,
       "address": "부산 연제구 연수로 지하 229",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21160951",
       "region": "부산"
     },
@@ -5828,7 +6071,7 @@
       "lat": 35.171497899839316,
       "lng": 129.10831503568375,
       "address": "부산 수영구 연수로 지하 337",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21160902",
       "region": "부산"
     },
@@ -5837,7 +6080,7 @@
       "lat": 35.2130037763101,
       "lng": 129.036274850219,
       "address": "부산 북구 만덕대로 지하 291",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21161006",
       "region": "부산"
     },
@@ -5846,7 +6089,7 @@
       "lat": 35.1986215514386,
       "lng": 129.065193277832,
       "address": "부산 동래구 아시아드대로 지하 153",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21160507",
       "region": "부산"
     },
@@ -5855,7 +6098,7 @@
       "lat": 35.18848999628461,
       "lng": 129.0740928144452,
       "address": "부산 연제구 월드컵대로 지하 209",
-      "description": "3호선, 동해선, 부산3호선",
+      "description": "부산3호선, 동해선",
       "url": "http://place.map.kakao.com/21160953",
       "region": "부산"
     },
@@ -5864,7 +6107,7 @@
       "lat": 35.2054044586102,
       "lng": 129.067995735318,
       "address": "부산 동래구 아시아드대로 지하 232",
-      "description": "3호선, 4호선, 부산3호선, 부산4호선",
+      "description": "부산3호선, 부산4호선",
       "url": "http://place.map.kakao.com/25045253",
       "region": "부산"
     },
@@ -5873,7 +6116,7 @@
       "lat": 35.2066183302771,
       "lng": 128.996342494032,
       "address": "부산 북구 낙동대로 1697",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21160952",
       "region": "부산"
     },
@@ -5882,7 +6125,7 @@
       "lat": 35.2111798817286,
       "lng": 128.981986450565,
       "address": "부산 강서구 낙동북로 485",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21161005",
       "region": "부산"
     },
@@ -5891,7 +6134,7 @@
       "lat": 35.2120778435626,
       "lng": 129.013192843436,
       "address": "부산 북구 만덕대로 지하 79",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21160492",
       "region": "부산"
     },
@@ -5900,7 +6143,7 @@
       "lat": 35.1767970911539,
       "lng": 129.0857095864,
       "address": "부산 연제구 월드컵대로 지하 23",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21161004",
       "region": "부산"
     },
@@ -5909,7 +6152,7 @@
       "lat": 35.21332375652248,
       "lng": 129.02375291133384,
       "address": "부산 북구 만덕대로 지하 179",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21161081",
       "region": "부산"
     },
@@ -5918,7 +6161,7 @@
       "lat": 35.2124735466918,
       "lng": 128.969425373083,
       "address": "부산 강서구 낙동북로 371",
-      "description": "3호선, 부산3호선",
+      "description": "부산3호선",
       "url": "http://place.map.kakao.com/21161080",
       "region": "부산"
     },
@@ -5927,7 +6170,7 @@
       "lat": 35.2133137085415,
       "lng": 128.960972949281,
       "address": "부산 강서구 낙동북로 295",
-      "description": "3호선, 부산3호선, 부산김해경전철",
+      "description": "부산3호선, 부산김해경전철",
       "url": "http://place.map.kakao.com/21160904",
       "region": "부산"
     },
@@ -5936,7 +6179,7 @@
       "lat": 35.20540841852537,
       "lng": 129.1018738053871,
       "address": "부산 동래구 반송로 지하 281",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21160956",
       "region": "부산"
     },
@@ -5945,7 +6188,7 @@
       "lat": 35.2017370185204,
       "lng": 129.083848486855,
       "address": "부산 동래구 충렬대로 지하 223",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21160908",
       "region": "부산"
     },
@@ -5954,7 +6197,7 @@
       "lat": 35.20028345958105,
       "lng": 129.09788161135464,
       "address": "부산 동래구 반송로 지하 205",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21161007",
       "region": "부산"
     },
@@ -5963,7 +6206,7 @@
       "lat": 35.2373686145171,
       "lng": 129.17176302749,
       "address": "부산 기장군 철마면 반송로 1101",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21160954",
       "region": "부산"
     },
@@ -5972,7 +6215,7 @@
       "lat": 35.22559607721028,
       "lng": 129.14611605582886,
       "address": "부산 해운대구 반송로 803",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21160906",
       "region": "부산"
     },
@@ -5981,7 +6224,7 @@
       "lat": 35.2157859199559,
       "lng": 129.1151206096,
       "address": "부산 금정구 반송로 465",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21161082",
       "region": "부산"
     },
@@ -5990,7 +6233,7 @@
       "lat": 35.2131681497048,
       "lng": 129.107524541959,
       "address": "부산 금정구 반송로 387",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21160907",
       "region": "부산"
     },
@@ -5999,7 +6242,7 @@
       "lat": 35.2323946024307,
       "lng": 129.15375363540113,
       "address": "부산 해운대구 반송로 917",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/13016014",
       "region": "부산"
     },
@@ -6008,7 +6251,7 @@
       "lat": 35.2177499579063,
       "lng": 129.123995882239,
       "address": "부산 해운대구 반송로 550",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/13016005",
       "region": "부산"
     },
@@ -6017,7 +6260,7 @@
       "lat": 35.200218916242,
       "lng": 129.090778955954,
       "address": "부산 동래구 충렬대로 지하 285",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21161083",
       "region": "부산"
     },
@@ -6026,7 +6269,7 @@
       "lat": 35.2181370268054,
       "lng": 129.137020635865,
       "address": "부산 해운대구 석대천로 121",
-      "description": "4호선, 부산4호선",
+      "description": "부산4호선",
       "url": "http://place.map.kakao.com/21160955",
       "region": "부산"
     },
@@ -6035,7 +6278,7 @@
       "lat": 35.3387498687181,
       "lng": 129.026444387383,
       "address": "경남 양산시 강변로 441",
-      "description": "2호선, 부산2호선",
+      "description": "부산2호선",
       "url": "http://place.map.kakao.com/21160901",
       "region": "경남"
     },
@@ -6260,9 +6503,18 @@
       "lat": 35.1719085341638,
       "lng": 128.948563729722,
       "address": "부산 강서구 공항진입로 165",
-      "description": "1호선, 광주1호선, 부산김해경전철",
+      "description": "부산김해경전철",
       "url": "http://place.map.kakao.com/14880386",
       "region": "부산"
+    },
+    {
+      "title": "공항역",
+      "lat": 35.14407609242912,
+      "lng": 126.81163183518822,
+      "address": "광주 광산구 상무대로 지하 416-99",
+      "description": "광주1호선",
+      "url": "http://place.map.kakao.com/21161103",
+      "region": "광주"
     },
     {
       "title": "박물관역",
@@ -6368,7 +6620,7 @@
       "lat": 35.87755434756526,
       "lng": 128.62791465030097,
       "address": "대구 동구 동대구로 지하 530",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161012",
       "region": "대구"
     },
@@ -6377,7 +6629,7 @@
       "lat": 35.86449822913336,
       "lng": 128.59333739255734,
       "address": "대구 중구 달구벌대로 지하 2100",
-      "description": "1호선, 2호선, 대구1호선, 대구2호선",
+      "description": "대구1호선, 대구2호선",
       "url": "http://place.map.kakao.com/21160914",
       "region": "대구"
     },
@@ -6386,16 +6638,25 @@
       "lat": 35.87085454444516,
       "lng": 128.59397506943253,
       "address": "대구 중구 중앙대로 지하 424",
-      "description": "1호선, 대구1호선, 대전1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161013",
       "region": "대구"
+    },
+    {
+      "title": "중앙로역",
+      "lat": 36.32866530912132,
+      "lng": 127.4258281669503,
+      "address": "대전 중구 중앙로 지하 145",
+      "description": "대전1호선",
+      "url": "http://place.map.kakao.com/21160980",
+      "region": "대전"
     },
     {
       "title": "진천역",
       "lat": 35.8138797140673,
       "lng": 128.523079769978,
       "address": "대구 달서구 월배로 지하 76",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161086",
       "region": "대구"
     },
@@ -6404,7 +6665,7 @@
       "lat": 35.857826850760546,
       "lng": 128.59110945231205,
       "address": "대구 중구 명덕로 지하 185",
-      "description": "1호선, 3호선, 대구1호선, 대구3호선",
+      "description": "대구1호선, 대구3호선",
       "url": "http://place.map.kakao.com/21161089",
       "region": "대구"
     },
@@ -6413,7 +6674,7 @@
       "lat": 35.8189266589744,
       "lng": 128.537763550346,
       "address": "대구 달서구 월배로 지하 223",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160910",
       "region": "대구"
     },
@@ -6422,7 +6683,7 @@
       "lat": 35.8044715972212,
       "lng": 128.500726490573,
       "address": "대구 달성군 화원읍 비슬로 지하 2600",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/1407981591",
       "region": "대구"
     },
@@ -6431,7 +6692,7 @@
       "lat": 35.86799440106771,
       "lng": 128.72424172030216,
       "address": "대구 동구 안심로 지하 363",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161085",
       "region": "대구"
     },
@@ -6440,7 +6701,7 @@
       "lat": 35.8712130165849,
       "lng": 128.733769742803,
       "address": "대구 동구 안심로 지하 455",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160461",
       "region": "대구"
     },
@@ -6449,7 +6710,7 @@
       "lat": 35.8237012191661,
       "lng": 128.545472867668,
       "address": "대구 달서구 월배로 지하 311",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160960",
       "region": "대구"
     },
@@ -6458,7 +6719,7 @@
       "lat": 35.9094350210376,
       "lng": 128.817528503806,
       "address": "경북 경산시 하양읍 하양역길 1",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/402298506",
       "region": "경북"
     },
@@ -6467,7 +6728,7 @@
       "lat": 35.79871751927962,
       "lng": 128.48936186250194,
       "address": "대구 달성군 화원읍 비슬로 지하 2476",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/1868380631",
       "region": "대구"
     },
@@ -6476,7 +6737,7 @@
       "lat": 35.8872016497293,
       "lng": 128.639921198411,
       "address": "대구 동구 아양로 지하 245",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161009",
       "region": "대구"
     },
@@ -6485,7 +6746,7 @@
       "lat": 35.87632871633905,
       "lng": 128.59704770331416,
       "address": "대구 북구 칠성남로30길 지하 24",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160961",
       "region": "대구"
     },
@@ -6494,7 +6755,7 @@
       "lat": 35.8761013615665,
       "lng": 128.682019041156,
       "address": "대구 동구 동촌로 지하 383",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/17491898",
       "region": "대구"
     },
@@ -6503,7 +6764,7 @@
       "lat": 35.9002058183569,
       "lng": 128.803132220432,
       "address": "경북 경산시 하양읍 대경로 528",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/402053768",
       "region": "경북"
     },
@@ -6512,7 +6773,7 @@
       "lat": 35.8392307420216,
       "lng": 128.573734314089,
       "address": "대구 남구 대명로 지하 141",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160509",
       "region": "대구"
     },
@@ -6521,7 +6782,7 @@
       "lat": 35.8698017965623,
       "lng": 128.692713541869,
       "address": "대구 동구 안심로 지하 57",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160477",
       "region": "대구"
     },
@@ -6530,7 +6791,7 @@
       "lat": 35.8161802095518,
       "lng": 128.53039944745,
       "address": "대구 달서구 월배로 지하 143",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/11474364",
       "region": "대구"
     },
@@ -6539,7 +6800,7 @@
       "lat": 35.86596683682594,
       "lng": 128.71360316643197,
       "address": "대구 동구 안심로 지하 261",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160962",
       "region": "대구"
     },
@@ -6548,7 +6809,7 @@
       "lat": 35.8441641859564,
       "lng": 128.588073922024,
       "address": "대구 남구 대명로 지하 292",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160913",
       "region": "대구"
     },
@@ -6557,7 +6818,7 @@
       "lat": 35.8409494737259,
       "lng": 128.581471198973,
       "address": "대구 남구 대명로 지하 222",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160959",
       "region": "대구"
     },
@@ -6566,7 +6827,7 @@
       "lat": 35.8393253088268,
       "lng": 128.565944864274,
       "address": "대구 남구 대명로 지하 71",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161011",
       "region": "대구"
     },
@@ -6575,7 +6836,7 @@
       "lat": 35.879640495861686,
       "lng": 128.67017529155623,
       "address": "대구 동구 동촌로 지하 275",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161084",
       "region": "대구"
     },
@@ -6584,7 +6845,7 @@
       "lat": 35.8761010648655,
       "lng": 128.605133646666,
       "address": "대구 북구 칠성남로 지하 222",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160494",
       "region": "대구"
     },
@@ -6593,7 +6854,7 @@
       "lat": 35.866697748321876,
       "lng": 128.7018717008197,
       "address": "대구 동구 안심로 지하 159",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160493",
       "region": "대구"
     },
@@ -6602,7 +6863,7 @@
       "lat": 35.8371825987976,
       "lng": 128.557190858302,
       "address": "대구 남구 월배로 지하 501",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160912",
       "region": "대구"
     },
@@ -6611,7 +6872,7 @@
       "lat": 35.8860685418711,
       "lng": 128.650275999718,
       "address": "대구 동구 해동로 지하 197",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160958",
       "region": "대구"
     },
@@ -6620,7 +6881,7 @@
       "lat": 35.883546382084,
       "lng": 128.659618182185,
       "address": "대구 동구 동촌로 지하 167",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160508",
       "region": "대구"
     },
@@ -6629,7 +6890,7 @@
       "lat": 35.8310389735877,
       "lng": 128.551723656305,
       "address": "대구 달서구 월배로 지하 412",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21161087",
       "region": "대구"
     },
@@ -6638,7 +6899,7 @@
       "lat": 35.8716771563369,
       "lng": 128.750970436245,
       "address": "대구 동구 사복동 610",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/402360574",
       "region": "대구"
     },
@@ -6647,7 +6908,7 @@
       "lat": 35.8840411124294,
       "lng": 128.631936380127,
       "address": "대구 동구 신암남로 지하 169",
-      "description": "1호선, 대구1호선",
+      "description": "대구1호선",
       "url": "http://place.map.kakao.com/21160911",
       "region": "대구"
     },
@@ -6656,7 +6917,7 @@
       "lat": 35.8576058595846,
       "lng": 128.465249990912,
       "address": "대구 달성군 다사읍 달구벌대로 지하 888",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/11474436",
       "region": "대구"
     },
@@ -6665,7 +6926,7 @@
       "lat": 35.859019444441,
       "lng": 128.626804891905,
       "address": "대구 수성구 달구벌대로 지하 2396",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160918",
       "region": "대구"
     },
@@ -6674,7 +6935,7 @@
       "lat": 35.8572148462546,
       "lng": 128.555687477795,
       "address": "대구 달서구 달구벌대로 지하 1760",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160967",
       "region": "대구"
     },
@@ -6683,7 +6944,7 @@
       "lat": 35.8408117112752,
       "lng": 128.705125542668,
       "address": "대구 수성구 달구벌대로 지하 3180",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160510",
       "region": "대구"
     },
@@ -6692,7 +6953,7 @@
       "lat": 35.85430901539491,
       "lng": 128.548124584983,
       "address": "대구 달서구 달구벌대로 지하 1665",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160919",
       "region": "대구"
     },
@@ -6701,7 +6962,7 @@
       "lat": 35.8588579996533,
       "lng": 128.644747980508,
       "address": "대구 수성구 달구벌대로 지하 2584",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160915",
       "region": "대구"
     },
@@ -6710,7 +6971,7 @@
       "lat": 35.85059490342399,
       "lng": 128.5157955477842,
       "address": "대구 달서구 달구벌대로 지하 1357",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/11474464",
       "region": "대구"
     },
@@ -6719,7 +6980,7 @@
       "lat": 35.8601228229147,
       "lng": 128.564640260301,
       "address": "대구 서구 달구벌대로 지하 1827",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161094",
       "region": "대구"
     },
@@ -6728,7 +6989,7 @@
       "lat": 35.8530815302455,
       "lng": 128.47852956757,
       "address": "대구 달서구 달구벌대로 지하 1014",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/25046501",
       "region": "대구"
     },
@@ -6737,7 +6998,7 @@
       "lat": 35.8515182536424,
       "lng": 128.491849809882,
       "address": "대구 달서구 달구벌대로 지하 1140",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160964",
       "region": "대구"
     },
@@ -6746,7 +7007,7 @@
       "lat": 35.83703160646826,
       "lng": 128.71530783739777,
       "address": "대구 수성구 달구벌대로 지하 3290",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161091",
       "region": "대구"
     },
@@ -6755,7 +7016,7 @@
       "lat": 35.8641579148789,
       "lng": 128.437002637504,
       "address": "대구 달성군 다사읍 문양역길 71",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160916",
       "region": "대구"
     },
@@ -6764,7 +7025,7 @@
       "lat": 35.8622521621908,
       "lng": 128.572719232126,
       "address": "대구 달서구 달구벌대로 지하 1900",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161018",
       "region": "대구"
     },
@@ -6773,7 +7034,7 @@
       "lat": 35.8648265376596,
       "lng": 128.458390514465,
       "address": "대구 달성군 다사읍 다사역로 지하 30",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161016",
       "region": "대구"
     },
@@ -6782,7 +7043,7 @@
       "lat": 35.8597628015782,
       "lng": 128.61411950785075,
       "address": "대구 수성구 달구벌대로 지하 2300",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161095",
       "region": "대구"
     },
@@ -6791,7 +7052,7 @@
       "lat": 35.8588057624788,
       "lng": 128.635638667651,
       "address": "대구 수성구 달구벌대로 지하 2500",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161090",
       "region": "대구"
     },
@@ -6800,7 +7061,7 @@
       "lat": 35.8547807171623,
       "lng": 128.653975174296,
       "address": "대구 수성구 달구벌대로 지하 2672",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161014",
       "region": "대구"
     },
@@ -6809,7 +7070,7 @@
       "lat": 35.84269870525034,
       "lng": 128.67998634310348,
       "address": "대구 수성구 달구벌대로 지하 2950",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161015",
       "region": "대구"
     },
@@ -6818,7 +7079,7 @@
       "lat": 35.8429442127885,
       "lng": 128.693244868779,
       "address": "대구 수성구 달구벌대로 지하 3080",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160462",
       "region": "대구"
     },
@@ -6827,7 +7088,7 @@
       "lat": 35.8517148505664,
       "lng": 128.507000383565,
       "address": "대구 달서구 달구벌대로 지하 1280",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161093",
       "region": "대구"
     },
@@ -6836,7 +7097,7 @@
       "lat": 35.8465875965262,
       "lng": 128.67168212651,
       "address": "대구 수성구 달구벌대로 지하 2870",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21160963",
       "region": "대구"
     },
@@ -6845,7 +7106,7 @@
       "lat": 35.863145404232455,
       "lng": 128.6029028791839,
       "address": "대구 중구 달구벌대로 지하 2190",
-      "description": "2호선, 대구2호선",
+      "description": "대구2호선",
       "url": "http://place.map.kakao.com/21161019",
       "region": "대구"
     },
@@ -6854,7 +7115,7 @@
       "lat": 35.86489286135085,
       "lng": 128.58243618642845,
       "address": "대구 중구 달구벌대로 지하 2000",
-      "description": "2호선, 3호선, 대구2호선, 대구3호선",
+      "description": "대구2호선, 대구3호선",
       "url": "http://place.map.kakao.com/21160966",
       "region": "대구"
     },
@@ -6863,7 +7124,7 @@
       "lat": 35.8696678378541,
       "lng": 128.582245500572,
       "address": "대구 중구 달성로 50",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/17491930",
       "region": "대구"
     },
@@ -6872,7 +7133,7 @@
       "lat": 35.9314624364377,
       "lng": 128.554539499622,
       "address": "대구 북구 팔거천동로 79",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202384",
       "region": "대구"
     },
@@ -6881,7 +7142,7 @@
       "lat": 35.883744587012295,
       "lng": 128.5814259287805,
       "address": "대구 서구 원대로 71",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605363",
       "region": "대구"
     },
@@ -6890,7 +7151,7 @@
       "lat": 35.9440507618416,
       "lng": 128.558336690689,
       "address": "대구 북구 팔거천동로 226",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202386",
       "region": "대구"
     },
@@ -6899,16 +7160,25 @@
       "lat": 35.9257457718174,
       "lng": 128.550345968157,
       "address": "대구 북구 팔거천동로 1",
-      "description": "1호선, 3호선, 대구3호선, 대전1호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605350",
       "region": "대구"
+    },
+    {
+      "title": "구암역",
+      "lat": 36.356695510518,
+      "lng": 127.330731986244,
+      "address": "대전 유성구 유성대로 703",
+      "description": "대전1호선",
+      "url": "http://place.map.kakao.com/21161110",
+      "region": "대전"
     },
     {
       "title": "수성못역",
       "lat": 35.8313560544497,
       "lng": 128.623216677973,
       "address": "대구 수성구 동대구로 14",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605329",
       "region": "대구"
     },
@@ -6917,7 +7187,7 @@
       "lat": 35.8182678027764,
       "lng": 128.646534534337,
       "address": "대구 수성구 범안로 83",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202359",
       "region": "대구"
     },
@@ -6926,7 +7196,7 @@
       "lat": 35.8543238441176,
       "lng": 128.616038217575,
       "address": "대구 수성구 명덕로 420",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605301",
       "region": "대구"
     },
@@ -6935,7 +7205,7 @@
       "lat": 35.820839170227,
       "lng": 128.640112691676,
       "address": "대구 수성구 지범로 194",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605358",
       "region": "대구"
     },
@@ -6944,7 +7214,7 @@
       "lat": 35.8390783843098,
       "lng": 128.623918523675,
       "address": "대구 수성구 동대구로 100",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605325",
       "region": "대구"
     },
@@ -6953,7 +7223,7 @@
       "lat": 35.8888415481729,
       "lng": 128.567880684049,
       "address": "대구 북구 팔달로 163-1",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605371",
       "region": "대구"
     },
@@ -6962,7 +7232,7 @@
       "lat": 35.8878448262803,
       "lng": 128.574359233514,
       "address": "대구 서구 팔달로 224-2",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605339",
       "region": "대구"
     },
@@ -6971,7 +7241,7 @@
       "lat": 35.9196484719641,
       "lng": 128.547426311675,
       "address": "대구 북구 칠곡중앙대로 262",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202382",
       "region": "대구"
     },
@@ -6980,7 +7250,7 @@
       "lat": 35.8919827045671,
       "lng": 128.553616577774,
       "address": "대구 서구 팔달로 28",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202378",
       "region": "대구"
     },
@@ -6989,7 +7259,7 @@
       "lat": 35.9043687510623,
       "lng": 128.545741973708,
       "address": "대구 북구 매천로18길 39",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202380",
       "region": "대구"
     },
@@ -6998,7 +7268,7 @@
       "lat": 35.9126784247052,
       "lng": 128.543413422111,
       "address": "대구 북구 학정로 6",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202381",
       "region": "대구"
     },
@@ -7007,7 +7277,7 @@
       "lat": 35.88983602273649,
       "lng": 128.56106304973693,
       "address": "대구 북구 팔달로 105",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202377",
       "region": "대구"
     },
@@ -7016,7 +7286,7 @@
       "lat": 35.825153218139,
       "lng": 128.631951304556,
       "address": "대구 수성구 지범로 100",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202361",
       "region": "대구"
     },
@@ -7025,7 +7295,7 @@
       "lat": 35.84517079454568,
       "lng": 128.62446775125383,
       "address": "대구 수성구 동대구로 166",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202364",
       "region": "대구"
     },
@@ -7034,7 +7304,7 @@
       "lat": 35.8978386982277,
       "lng": 128.546749099511,
       "address": "대구 북구 매천로2길 43",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202379",
       "region": "대구"
     },
@@ -7043,7 +7313,7 @@
       "lat": 35.8756894052121,
       "lng": 128.582099523544,
       "address": "대구 중구 달성로 116",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202373",
       "region": "대구"
     },
@@ -7052,7 +7322,7 @@
       "lat": 35.855001346752566,
       "lng": 128.60637516764342,
       "address": "대구 남구 명덕로 330",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605335",
       "region": "대구"
     },
@@ -7061,7 +7331,7 @@
       "lat": 35.8524169408054,
       "lng": 128.625129180117,
       "address": "대구 수성구 동대구로 248",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202365",
       "region": "대구"
     },
@@ -7070,7 +7340,7 @@
       "lat": 35.9583910233172,
       "lng": 128.559895264986,
       "address": "대구 북구 팔거천동로 386",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605294",
       "region": "대구"
     },
@@ -7079,7 +7349,7 @@
       "lat": 35.8553896143222,
       "lng": 128.599699303506,
       "address": "대구 남구 명덕로 260",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/24202368",
       "region": "대구"
     },
@@ -7088,12 +7358,21 @@
       "lat": 35.9515586052486,
       "lng": 128.559202329079,
       "address": "대구 북구 팔거천동로 310",
-      "description": "3호선, 대구3호선",
+      "description": "대구3호선",
       "url": "http://place.map.kakao.com/26605331",
       "region": "대구"
     },
     {
-      "title": "서대구역",
+      "title": "동대구역 대경선 6번출구",
+      "lat": 35.8798066570888,
+      "lng": 128.629615015352,
+      "address": "대구 동구 신암동 295",
+      "description": "",
+      "url": "http://place.map.kakao.com/635064737",
+      "region": "대구"
+    },
+    {
+      "title": "서대구역 대경선",
       "lat": 35.8814910528299,
       "lng": 128.54001313659,
       "address": "대구 서구 와룡로 527",
@@ -7106,7 +7385,7 @@
       "lat": 36.3537203343187,
       "lng": 127.341445807064,
       "address": "대전 유성구 계룡로 지하 97",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/27455726",
       "region": "대전"
     },
@@ -7115,7 +7394,7 @@
       "lat": 36.392180531687046,
       "lng": 127.31455508683969,
       "address": "대전 유성구 북유성대로 지하 303",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21161109",
       "region": "대전"
     },
@@ -7124,7 +7403,7 @@
       "lat": 36.331529158829255,
       "lng": 127.43287717700683,
       "address": "대전 동구 중앙로 지하 218",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160997",
       "region": "대전"
     },
@@ -7133,7 +7412,7 @@
       "lat": 36.3741446787189,
       "lng": 127.317883531845,
       "address": "대전 유성구 노은로 지하 161",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160463",
       "region": "대전"
     },
@@ -7142,7 +7421,7 @@
       "lat": 36.3169610007362,
       "lng": 127.458427352399,
       "address": "대전 동구 옥천로 지하 162",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160996",
       "region": "대전"
     },
@@ -7151,7 +7430,7 @@
       "lat": 36.3574713520615,
       "lng": 127.381268082318,
       "address": "대전 서구 한밭대로 지하 744",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21161035",
       "region": "대전"
     },
@@ -7160,7 +7439,7 @@
       "lat": 36.3590845904517,
       "lng": 127.3217976064,
       "address": "대전 유성구 현충원로 지하 455",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160981",
       "region": "대전"
     },
@@ -7169,7 +7448,7 @@
       "lat": 36.3455472425069,
       "lng": 127.384569666381,
       "address": "대전 서구 문정로48번길 지하 19",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160979",
       "region": "대전"
     },
@@ -7178,7 +7457,7 @@
       "lat": 36.3286893013728,
       "lng": 127.40492144995,
       "address": "대전 중구 계룡로 지하 793",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160497",
       "region": "대전"
     },
@@ -7187,7 +7466,7 @@
       "lat": 36.3295857807756,
       "lng": 127.442837712837,
       "address": "대전 동구 계족로 지하 176",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21161108",
       "region": "대전"
     },
@@ -7196,7 +7475,7 @@
       "lat": 36.3841073391355,
       "lng": 127.319497778302,
       "address": "대전 유성구 노은로 273",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21161034",
       "region": "대전"
     },
@@ -7205,7 +7484,7 @@
       "lat": 36.3582587338705,
       "lng": 127.364599812571,
       "address": "대전 서구 한밭대로 지하 595",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160999",
       "region": "대전"
     },
@@ -7214,7 +7493,7 @@
       "lat": 36.3547487461809,
       "lng": 127.354690249086,
       "address": "대전 서구 갑천도시고속도로 지하 1833",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160983",
       "region": "대전"
     },
@@ -7223,7 +7502,7 @@
       "lat": 36.3575809907703,
       "lng": 127.372796710623,
       "address": "대전 서구 한밭대로 지하 666",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21161111",
       "region": "대전"
     },
@@ -7232,7 +7511,7 @@
       "lat": 36.3248034278274,
       "lng": 127.419552786885,
       "address": "대전 중구 중앙로 지하 71",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160512",
       "region": "대전"
     },
@@ -7241,7 +7520,7 @@
       "lat": 36.32242246757099,
       "lng": 127.41257645927034,
       "address": "대전 중구 계룡로 지하 889",
-      "description": "1호선, 대전1호선",
+      "description": "대전1호선",
       "url": "http://place.map.kakao.com/21160982",
       "region": "대전"
     },
@@ -7250,7 +7529,7 @@
       "lat": 35.1466624736265,
       "lng": 126.848542149637,
       "address": "광주 서구 상무대로 지하 777",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21161104",
       "region": "광주"
     },
@@ -7259,7 +7538,7 @@
       "lat": 35.1233388911729,
       "lng": 126.932411042605,
       "address": "광주 동구 남문로 지하 587",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/14831868",
       "region": "광주"
     },
@@ -7268,7 +7547,7 @@
       "lat": 35.1247287298032,
       "lng": 126.769582969722,
       "address": "광주 광산구 평동로 870",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21161027",
       "region": "광주"
     },
@@ -7277,7 +7556,7 @@
       "lat": 35.1393018227168,
       "lng": 126.922978672689,
       "address": "광주 동구 제봉로 지하 1",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160994",
       "region": "광주"
     },
@@ -7286,7 +7565,7 @@
       "lat": 35.15067229640782,
       "lng": 126.91460650867734,
       "address": "광주 동구 금남로 지하 210",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/27455727",
       "region": "광주"
     },
@@ -7295,7 +7574,7 @@
       "lat": 35.150482087694016,
       "lng": 126.85869740297962,
       "address": "광주 서구 상무대로 지하 883",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/11474362",
       "region": "광주"
     },
@@ -7304,7 +7583,7 @@
       "lat": 35.13749210013527,
       "lng": 126.7915362644601,
       "address": "광주 광산구 상무대로 지하 201-99",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160991",
       "region": "광주"
     },
@@ -7313,7 +7592,7 @@
       "lat": 35.15159570722761,
       "lng": 126.86953837305741,
       "address": "광주 서구 상무대로 지하 983",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21161105",
       "region": "광주"
     },
@@ -7322,7 +7601,7 @@
       "lat": 35.146438689428145,
       "lng": 126.92001557923201,
       "address": "광주 동구 문화전당로26번길 지하 7",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160978",
       "region": "광주"
     },
@@ -7331,7 +7610,7 @@
       "lat": 35.131776733914876,
       "lng": 126.78799483393821,
       "address": "광주 광산구 상무대로 지하 125-99",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/11474385",
       "region": "광주"
     },
@@ -7340,7 +7619,7 @@
       "lat": 35.151662750226315,
       "lng": 126.89493020259164,
       "address": "광주 서구 경열로 지하 87",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160976",
       "region": "광주"
     },
@@ -7349,7 +7628,7 @@
       "lat": 35.14354984173234,
       "lng": 126.79936687021848,
       "address": "광주 광산구 상무대로 지하 314-99",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160975",
       "region": "광주"
     },
@@ -7358,7 +7637,7 @@
       "lat": 35.15419277418956,
       "lng": 126.90931949178001,
       "address": "광주 북구 금남로 지하 138",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21161030",
       "region": "광주"
     },
@@ -7367,7 +7646,7 @@
       "lat": 35.1543243970299,
       "lng": 126.901277990948,
       "address": "광주 서구 경열로 지하 152",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160992",
       "region": "광주"
     },
@@ -7376,7 +7655,7 @@
       "lat": 35.1432572303967,
       "lng": 126.841569332512,
       "address": "광주 서구 상무대로 지하 705",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160480",
       "region": "광주"
     },
@@ -7385,7 +7664,7 @@
       "lat": 35.106787076597,
       "lng": 126.93399541177,
       "address": "광주 동구 녹동길 45",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21160977",
       "region": "광주"
     },
@@ -7394,7 +7673,7 @@
       "lat": 35.15328307708562,
       "lng": 126.88372612030611,
       "address": "광주 서구 상무대로 지하 1123",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21161029",
       "region": "광주"
     },
@@ -7403,7 +7682,7 @@
       "lat": 35.1327288057728,
       "lng": 126.928405063266,
       "address": "광주 동구 남문로 지하 700",
-      "description": "1호선, 광주1호선",
+      "description": "광주1호선",
       "url": "http://place.map.kakao.com/21161107",
       "region": "광주"
     },
@@ -7450,6 +7729,15 @@
       "address": "경기 화성시 동탄역로 지하 151",
       "description": "GTX-A",
       "url": "http://place.map.kakao.com/1396984931",
+      "region": "경기"
+    },
+    {
+      "title": "가천대역 1번출구",
+      "lat": 37.4493480444436,
+      "lng": 127.126913938793,
+      "address": "경기 성남시 수정구 복정동 산 65-8",
+      "description": "분당선, 수인분당선",
+      "url": "http://place.map.kakao.com/27239576",
       "region": "경기"
     }
   ]
