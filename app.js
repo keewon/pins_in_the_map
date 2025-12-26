@@ -896,10 +896,45 @@ function createMarker(pin, color, listTitle, listId) {
         ? `<a href="${pin.url}" target="_blank" rel="noopener noreferrer" class="popup-title-link">${pin.title}</a>`
         : `<span>${pin.title}</span>`;
 
+    // 학교 상세정보 (중학교, 고등학교)
+    let schoolInfoHtml = '';
+    if ((listId === 1 || listId === 9) && pin.coed_type) {
+        const badges = [];
+        
+        // 남/녀/공학 배지
+        if (pin.coed_type === '남학교') {
+            badges.push('<span class="school-badge male">♂ 남학교</span>');
+        } else if (pin.coed_type === '여학교') {
+            badges.push('<span class="school-badge female">♀ 여학교</span>');
+        } else if (pin.coed_type === '공학') {
+            badges.push('<span class="school-badge coed">⚥ 공학</span>');
+        }
+        
+        // 설립유형
+        if (pin.found_type) {
+            badges.push(`<span class="school-badge type">${pin.found_type}</span>`);
+        }
+        
+        // 학생수
+        if (pin.student_total) {
+            badges.push(`<span class="school-badge students">👨‍🎓 ${pin.student_total}명</span>`);
+        }
+        
+        // 진학률 (고등학교만)
+        if (listId === 9 && pin.advancement_rate) {
+            badges.push(`<span class="school-badge rate">📈 진학률 ${pin.advancement_rate}%</span>`);
+        }
+        
+        if (badges.length > 0) {
+            schoolInfoHtml = `<div class="school-info">${badges.join('')}</div>`;
+        }
+    }
+
     const popupContent = `
         <div class="popup-content">
             <div class="popup-title">${titleContent}</div>
             <div class="popup-description">${pin.description}</div>
+            ${schoolInfoHtml}
             <div class="popup-list-badge" style="background: ${color}">${listTitle}</div>
         </div>
     `;
