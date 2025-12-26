@@ -106,8 +106,8 @@ pins_on_the_map/
   "list_id": 1,
   "pins": [
     {
-      "latitude": 37.5665,
-      "longitude": 126.9780,
+      "lat": 37.5665,
+      "lng": 126.9780,
       "title": "서울중학교",
       "description": "서울특별시 종로구"
     }
@@ -118,12 +118,11 @@ pins_on_the_map/
 ### 학교 데이터 추가 필드
 ```json
 {
-  "latitude": 37.5665,
-  "longitude": 126.9780,
+  "lat": 37.5665,
+  "lng": 126.9780,
   "title": "서울고등학교",
   "description": "서울특별시 서초구",
-  "gender": "공학",
-  "student_count": 1200,
+  "coed_type": "공학",
   "school_type": "일반고"
 }
 ```
@@ -147,8 +146,8 @@ pins_on_the_map/
   "list_id": 99,
   "pins": [
     {
-      "latitude": 37.5665,
-      "longitude": 126.9780,
+      "lat": 37.5665,
+      "lng": 126.9780,
       "title": "서울역",
       "description": "서울특별시 용산구"
     }
