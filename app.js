@@ -25,6 +25,25 @@ const LIST_ICONS = {
         { name: 'korean', value: '중', label: '중' },
         { name: 'hanja', value: '中', label: '中' },
     ],
+    2: [ // 맥도날드
+        { name: 'color', value: 'color', label: '색상' },
+        { name: 'emoji', value: '🍔', label: '🍔' },
+    ],
+    3: [ // 서브웨이
+        { name: 'color', value: 'color', label: '색상' },
+        { name: 'emoji', value: '🥪', label: '🥪' },
+    ],
+    4: [ // 도서관
+        { name: 'color', value: 'color', label: '색상' },
+        { name: 'emoji', value: '📚', label: '📚' },
+        { name: 'hanja', value: '書', label: '書' },
+    ],
+    5: [ // 수영장
+        { name: 'color', value: 'color', label: '색상' },
+        { name: 'emoji', value: '🏊', label: '🏊' },
+        { name: 'korean', value: '수', label: '수' },
+        { name: 'hanja', value: '泳', label: '泳' },
+    ],
     9: [ // 고등학교
         { name: 'color', value: 'color', label: '색상' },
         { name: 'emoji', value: '🏫', label: '🏫' },
@@ -908,8 +927,8 @@ function createMarker(pin, color, listTitle, listId) {
             iconAnchor: [8, 8],
             popupAnchor: [0, -8],
         });
-    } else if (listId === 1 || listId === 9) {
-        // 중학교, 고등학교는 아이콘 옵션에 따라 표시
+    } else if (LIST_ICONS[listId]) {
+        // 아이콘 옵션이 있는 리스트는 선택된 아이콘에 따라 표시
         const selectedIcon = state.listIcons[listId] || 'color';
         if (selectedIcon === 'color') {
             // 기본 마커 (핀 모양)
@@ -920,11 +939,11 @@ function createMarker(pin, color, listTitle, listId) {
                 iconAnchor: [16, 32],
                 popupAnchor: [0, -32],
             });
-        } else if (selectedIcon === '🏫') {
+        } else if (['🏫', '🍔', '🥪', '📚', '🏊'].includes(selectedIcon)) {
             // 이모지 마커
             icon = L.divIcon({
-                className: 'school-marker-wrapper',
-                html: `<div class="school-marker">🏫</div>`,
+                className: 'emoji-marker-wrapper',
+                html: `<div class="emoji-marker">${selectedIcon}</div>`,
                 iconSize: [28, 28],
                 iconAnchor: [14, 14],
                 popupAnchor: [0, -14],

@@ -859,11 +859,13 @@ body {
     transform: scale(1.2);
 }
 
-/* School Marker - Emoji */
+/* Emoji Marker */
+.emoji-marker-wrapper,
 .school-marker-wrapper {
     background: transparent !important;
 }
 
+.emoji-marker,
 .school-marker {
     font-size: 24px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -871,6 +873,7 @@ body {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
+.emoji-marker:hover,
 .school-marker:hover {
     transform: scale(1.2);
 }
