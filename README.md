@@ -140,6 +140,7 @@ pins_in_the_map/
 |--------|------|----------|
 | 맥도날드, 써브웨이, 도서관, 수영장 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
 | 중학교, 고등학교 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
+| 중학교, 고등학교 상세정보 (남/녀/공학, 학생수) | [학교알리미](https://www.schoolinfo.go.kr/) | 공공누리 |
 | 지하철역, 기차역 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
 | 지하철 노선도 | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
 | 기차 노선도 | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
