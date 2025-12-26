@@ -7,12 +7,24 @@
 
 ## ✨ 기능
 
-- 🗺️ **인터랙티브 지도**: Leaflet 기반의 부드러운 지도 인터랙션
+- 🗺️ **인터랙티브 지도**: Leaflet 기반의 부드러운 지도 인터랙션 (한글 지명 지원)
 - 📋 **다중 핀 리스트**: 여러 개의 핀 리스트를 동시에 관리
 - ✅ **체크박스 토글**: 각 리스트를 표시/숨김 가능
-- 🎨 **색상 커스터마이징**: 각 리스트별 색상 지정 가능
+- 🎨 **색상 커스터마이징**: 각 리스트별 색상 및 아이콘 지정 가능
 - 📱 **반응형 디자인**: 데스크탑 및 모바일 완벽 지원
 - 🌙 **다크 테마**: 눈이 편한 다크 테마 기본 적용
+- 🚇 **노선도 표시**: 지하철 및 기차 노선도 오버레이
+- 🏫 **학교 정보**: 남/녀/공학, 학생수, 학교유형 표시
+
+## 📍 포함된 데이터
+
+| 카테고리 | 리스트 |
+|----------|--------|
+| 🏫 교육 | 중학교, 고등학교 (일반고/특목고/자사고/특성화고 등) |
+| 📚 문화 | 도서관, 수영장 |
+| 🍔 음식점 | 맥도날드, 써브웨이 |
+| 🚇 교통 | 지하철역, 기차역 (노선도 포함) |
+| 🏢 아파트 | 래미안, 자이, 푸르지오, 아이파크, 이편한세상, 힐스테이트, 롯데캐슬, 위브, 더샵 |
 
 ## 🚀 시작하기
 
@@ -54,54 +66,91 @@ pins_on_the_map/
 ├── styles.css          # 스타일시트
 ├── app.js              # 애플리케이션 로직
 ├── data/
-│   └── pins.json       # 핀 데이터 (정적 JSON)
+│   ├── lists.json      # 리스트 메타데이터 (제목, 색상, 아이콘)
+│   ├── 1.json          # 중학교 데이터
+│   ├── 2.json          # 도서관 데이터
+│   ├── ...             # 기타 데이터 파일
+│   ├── subway_lines.json   # 지하철 노선도
+│   └── train_lines.json    # 기차 노선도
+├── scripts/            # 데이터 수집 스크립트
+│   ├── fetch_apartments.py
+│   ├── fetch_middle_schools.py
+│   ├── fetch_high_schools.py
+│   ├── fetch_school_info.py
+│   ├── fetch_stations.py
+│   └── ...
 ├── SPEC.md             # 기획 문서
 └── README.md           # 이 문서
 ```
 
 ## 📝 데이터 구조
 
-### 핀 리스트 (List)
+### 리스트 메타데이터 (lists.json)
 ```json
 {
-  "id": "unique-id",
-  "title": "리스트 제목",
-  "description": "리스트 설명",
-  "color": "#hex-color",
-  "pins": [...]
+  "lists": [
+    {
+      "id": 1,
+      "title": "중학교",
+      "description": "전국 중학교 위치",
+      "color": "#06b6d4",
+      "icons": ["color", "🏫", "중", "中"]
+    }
+  ]
 }
 ```
 
-### 핀 (Pin)
+### 핀 데이터 ({id}.json)
+```json
+{
+  "list_id": 1,
+  "pins": [
+    {
+      "latitude": 37.5665,
+      "longitude": 126.9780,
+      "title": "서울중학교",
+      "description": "서울특별시 종로구"
+    }
+  ]
+}
+```
+
+### 학교 데이터 추가 필드
 ```json
 {
   "latitude": 37.5665,
   "longitude": 126.9780,
-  "title": "장소 이름",
-  "description": "장소 설명"
+  "title": "서울고등학교",
+  "description": "서울특별시 서초구",
+  "gender": "공학",
+  "student_count": 1200,
+  "school_type": "일반고"
 }
 ```
 
 ## 🎨 새로운 핀 리스트 추가하기
 
-`data/pins.json` 파일을 편집하여 새로운 핀 리스트를 추가할 수 있습니다:
-
+### 1. lists.json에 리스트 메타데이터 추가
 ```json
 {
-  "lists": [
+  "id": 99,
+  "title": "나만의 리스트",
+  "description": "나만의 장소 모음",
+  "color": "#ff6b6b",
+  "icons": ["color", "📍", "M", "M"]
+}
+```
+
+### 2. data/99.json 파일 생성
+```json
+{
+  "list_id": 99,
+  "pins": [
     {
-      "id": "my-new-list",
-      "title": "나만의 리스트",
-      "description": "나만의 장소 모음",
-      "color": "#ff6b6b",
-      "pins": [
-        {
-          "latitude": 37.5665,
-          "longitude": 126.9780,
-          "title": "서울역",
-          "description": "서울특별시 용산구"
-        }
-      ]
+      "latitude": 37.5665,
+      "longitude": 126.9780,
+      "title": "서울역",
+      "description": "서울특별시 용산구"
     }
   ]
 }
@@ -131,8 +180,9 @@ pins_on_the_map/
 - **HTML5** / **CSS3** / **JavaScript (ES6+)**
 - **[Leaflet](https://leafletjs.com/)** - 오픈소스 지도 라이브러리
 - **[Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster)** - 마커 클러스터링
-- **[CartoDB](https://carto.com/)** - 다크 테마 맵 타일
+- **[OpenStreetMap](https://www.openstreetmap.org/)** - 맵 타일 (한글 지명 지원)
 - **Google Fonts** - Noto Sans KR, Playfair Display
+- **Python** - 데이터 수집 스크립트
 
 ## 📊 데이터 출처
 
@@ -140,10 +190,11 @@ pins_on_the_map/
 |--------|------|----------|
 | 맥도날드, 써브웨이, 도서관, 수영장 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
 | 중학교, 고등학교 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
-| 중학교, 고등학교 상세정보 (남/녀/공학, 학생수) | [학교알리미](https://www.schoolinfo.go.kr/) | 공공누리 |
+| 중학교, 고등학교 상세정보 (남/녀/공학, 학생수, 학교유형) | [학교알리미](https://www.schoolinfo.go.kr/) | 공공누리 |
 | 지하철역, 기차역 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
 | 지하철 노선도 | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
 | 기차 노선도 | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
+| 아파트 위치 (래미안, 자이, 푸르지오, 아이파크, 이편한세상, 힐스테이트, 롯데캐슬, 위브, 더샵) | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
 
 ## 📄 라이선스
 
