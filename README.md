@@ -130,12 +130,27 @@ pins_in_the_map/
 
 - **HTML5** / **CSS3** / **JavaScript (ES6+)**
 - **[Leaflet](https://leafletjs.com/)** - 오픈소스 지도 라이브러리
+- **[Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster)** - 마커 클러스터링
 - **[CartoDB](https://carto.com/)** - 다크 테마 맵 타일
 - **Google Fonts** - Noto Sans KR, Playfair Display
+
+## 📊 데이터 출처
+
+| 데이터 | 출처 | 라이선스 |
+|--------|------|----------|
+| 맥도날드, 써브웨이, 도서관, 수영장 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
+| 중학교, 고등학교 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
+| 지하철역, 기차역 위치 | [카카오맵 API](https://developers.kakao.com/) | 카카오 API 이용약관 |
+| 지하철 노선도 | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
+| 기차 노선도 | [OpenStreetMap](https://www.openstreetmap.org/) via Overpass API | ODbL |
 
 ## 📄 라이선스
 
 MIT License - 자유롭게 사용, 수정, 배포하실 수 있습니다.
+
+### 데이터 라이선스
+- 카카오맵 API 데이터: [카카오 API 이용약관](https://developers.kakao.com/terms/latest/ko/site-policy) 준수
+- OpenStreetMap 데이터: [ODbL (Open Database License)](https://opendatacommons.org/licenses/odbl/) - © OpenStreetMap contributors
 
 ---
 
