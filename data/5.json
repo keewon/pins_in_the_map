@@ -1,0 +1,65 @@
+{
+  "pins": [
+    {
+      "latitude": 37.5200,
+      "longitude": 127.0700,
+      "title": "잠실종합운동장 수영장",
+      "description": "서울특별시 송파구 잠실동"
+    },
+    {
+      "latitude": 37.5100,
+      "longitude": 127.0650,
+      "title": "올림픽공원 수영장",
+      "description": "서울특별시 송파구 방이동"
+    },
+    {
+      "latitude": 35.1900,
+      "longitude": 129.0600,
+      "title": "부산시민공원 수영장",
+      "description": "부산광역시 부산진구"
+    },
+    {
+      "latitude": 35.8650,
+      "longitude": 128.5900,
+      "title": "대구시민수영장",
+      "description": "대구광역시 달서구"
+    },
+    {
+      "latitude": 35.1500,
+      "longitude": 126.8800,
+      "title": "광주시민수영장",
+      "description": "광주광역시 서구"
+    },
+    {
+      "latitude": 36.3800,
+      "longitude": 127.3400,
+      "title": "대전시민수영장",
+      "description": "대전광역시 유성구"
+    },
+    {
+      "latitude": 37.4200,
+      "longitude": 126.6800,
+      "title": "인천시민수영장",
+      "description": "인천광역시 연수구"
+    },
+    {
+      "latitude": 37.2900,
+      "longitude": 127.0100,
+      "title": "수원시민수영장",
+      "description": "경기도 수원시 팔달구"
+    },
+    {
+      "latitude": 35.5400,
+      "longitude": 129.3200,
+      "title": "울산시민수영장",
+      "description": "울산광역시 남구"
+    },
+    {
+      "latitude": 33.4890,
+      "longitude": 126.4983,
+      "title": "제주시민수영장",
+      "description": "제주특별자치도 제주시"
+    }
+  ]
+}
+

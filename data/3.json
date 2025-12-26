@@ -1,0 +1,47 @@
+{
+  "pins": [
+    {
+      "latitude": 37.5636,
+      "longitude": 126.9825,
+      "title": "서브웨이 광화문점",
+      "description": "서울특별시 종로구 광화문"
+    },
+    {
+      "latitude": 37.5079,
+      "longitude": 127.0620,
+      "title": "서브웨이 삼성역점",
+      "description": "서울특별시 강남구 삼성동"
+    },
+    {
+      "latitude": 37.5172,
+      "longitude": 127.0473,
+      "title": "서브웨이 선릉역점",
+      "description": "서울특별시 강남구 선릉역"
+    },
+    {
+      "latitude": 35.1595,
+      "longitude": 129.0601,
+      "title": "서브웨이 부산서면점",
+      "description": "부산광역시 부산진구"
+    },
+    {
+      "latitude": 35.8750,
+      "longitude": 128.6000,
+      "title": "서브웨이 대구반월당점",
+      "description": "대구광역시 중구"
+    },
+    {
+      "latitude": 36.3630,
+      "longitude": 127.3563,
+      "title": "서브웨이 대전유성점",
+      "description": "대전광역시 유성구"
+    },
+    {
+      "latitude": 37.4010,
+      "longitude": 127.1087,
+      "title": "서브웨이 판교역점",
+      "description": "경기도 성남시 분당구"
+    }
+  ]
+}
+

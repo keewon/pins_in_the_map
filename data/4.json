@@ -1,0 +1,59 @@
+{
+  "pins": [
+    {
+      "latitude": 37.5722,
+      "longitude": 126.9760,
+      "title": "국립중앙도서관",
+      "description": "서울특별시 서초구 반포대로"
+    },
+    {
+      "latitude": 37.5048,
+      "longitude": 127.0495,
+      "title": "강남도서관",
+      "description": "서울특별시 강남구 선릉로"
+    },
+    {
+      "latitude": 35.1587,
+      "longitude": 129.0600,
+      "title": "부산시립도서관",
+      "description": "부산광역시 부산진구"
+    },
+    {
+      "latitude": 35.8700,
+      "longitude": 128.6010,
+      "title": "대구시립중앙도서관",
+      "description": "대구광역시 중구"
+    },
+    {
+      "latitude": 35.1600,
+      "longitude": 126.8500,
+      "title": "광주광역시립도서관",
+      "description": "광주광역시 북구"
+    },
+    {
+      "latitude": 36.3700,
+      "longitude": 127.3600,
+      "title": "대전광역시립도서관",
+      "description": "대전광역시 유성구"
+    },
+    {
+      "latitude": 37.4500,
+      "longitude": 126.7000,
+      "title": "인천광역시립도서관",
+      "description": "인천광역시 남동구"
+    },
+    {
+      "latitude": 37.2750,
+      "longitude": 127.0100,
+      "title": "수원시립도서관",
+      "description": "경기도 수원시 장안구"
+    },
+    {
+      "latitude": 33.4996,
+      "longitude": 126.5312,
+      "title": "제주도립도서관",
+      "description": "제주특별자치도 제주시"
+    }
+  ]
+}
+

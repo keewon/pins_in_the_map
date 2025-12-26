@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pins in the Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <header class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">📍</span>
+                    <h1>Pins in the Map</h1>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                    <span class="toggle-icon"></span>
+                </button>
+            </header>
+            
+            <div class="sidebar-content">
+                <p class="sidebar-description">지도에서 다양한 장소를 확인하세요</p>
+                
+                <div class="list-container" id="listContainer">
+                    <!-- Pin lists will be dynamically inserted here -->
+                </div>
+            </div>
+            
+            <footer class="sidebar-footer">
+                <p>체크박스로 리스트를 표시/숨김</p>
+            </footer>
+        </aside>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open sidebar">
+            <span class="hamburger"></span>
+        </button>
+
+        <!-- Map Container -->
+        <main class="map-wrapper">
+            <div id="map"></div>
+        </main>
+
+        <!-- Overlay for mobile -->
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
