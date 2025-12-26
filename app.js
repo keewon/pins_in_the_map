@@ -711,6 +711,24 @@ function createMarker(pin, color, listTitle, listId) {
             iconAnchor: [isTransfer ? 9 : 7, isTransfer ? 9 : 7],
             popupAnchor: [0, isTransfer ? -9 : -7],
         });
+    } else if (listId === 7 || listId === 8) {
+        // 기차역은 정사각형으로 표시
+        icon = L.divIcon({
+            className: 'train-marker-wrapper',
+            html: `<div class="train-marker" style="background: ${color}"></div>`,
+            iconSize: [16, 16],
+            iconAnchor: [8, 8],
+            popupAnchor: [0, -8],
+        });
+    } else if (listId === 1) {
+        // 중학교는 학교 이모지로 표시
+        icon = L.divIcon({
+            className: 'school-marker-wrapper',
+            html: `<div class="school-marker">🏫</div>`,
+            iconSize: [28, 28],
+            iconAnchor: [14, 14],
+            popupAnchor: [0, -14],
+        });
     } else {
         // 기본 마커 (핀 모양)
         icon = L.divIcon({
